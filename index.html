@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -125,15 +127,15 @@
             pointer-events: none;
         }
 
-        /* Scaled active dot indicator under taskbar buttons */
+        /* Scaled active dot indicator under taskbar buttons for ultra-small dock */
         .active-dot::after {
             content: '';
             position: absolute;
-            bottom: 2px;
+            bottom: 1px;
             left: 50%;
             transform: translateX(-50%);
-            width: 4px;
-            height: 4px;
+            width: 3px;
+            height: 3px;
             border-radius: 50%;
             background-color: var(--color-calico-gold);
         }
@@ -224,12 +226,12 @@
                 padding: 1.5rem !important;
             }
 
-            /* Taskbar touch optimizations (Slightly reduced size for cleaner layout) */
+            /* Taskbar touch optimizations (Ultra-compact size for mobile) */
             .glass-taskbar {
                 width: calc(100vw - 2.25rem) !important;
                 padding-left: 0.5rem !important;
                 padding-right: 0.5rem !important;
-                height: 3.5rem !important;
+                height: 2.5rem !important;
                 border-radius: 1rem !important;
                 bottom: 1.125rem !important;
             }
@@ -281,18 +283,18 @@
     <!-- ==================== MAIN DESKTOP ENVIRONMENT ==================== -->
     <main id="desktop" class="relative w-full h-full flex flex-col justify-between p-4 z-20">
         
-        <!-- HEADER (Reduced by 30%) -->
-        <header class="w-full flex justify-between items-center px-4 py-2 bg-white/5 backdrop-blur-md rounded-xl border border-white/10 text-white z-30">
+        <!-- HEADER (Reduced by 30% further to px-3 py-1.5 with text-[11px]) -->
+        <header class="w-full flex justify-between items-center px-3 py-1.5 bg-white/5 backdrop-blur-md rounded-xl border border-white/10 text-white z-30">
             <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-xs tracking-wider font-medium text-indigo-100/85">ULIS-VNU • Công nghệ số & Trí tuệ nhân tạo</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-[11px] tracking-wider font-medium text-indigo-100/85">ULIS-VNU • Công nghệ số & Trí tuệ nhân tạo</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://drive.google.com/drive/folders/1UfrVXuK82cC4SywK87lNnzwEk-4ntSh_?usp=drive_link" target="_blank" class="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-amber-400/30 to-orange-400/30 border border-amber-300/40 hover:from-amber-400/50 hover:to-orange-400/50 rounded-lg text-xs font-medium tracking-wide text-amber-100 transition-all duration-300 hover:scale-105 shadow-md">
-                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <a href="https://drive.google.com/drive/folders/1UfrVXuK82cC4SywK87lNnzwEk-4ntSh_?usp=drive_link" target="_blank" class="flex items-center gap-1 px-2.5 py-0.5 bg-gradient-to-r from-amber-400/30 to-orange-400/30 border border-amber-300/40 hover:from-amber-400/50 hover:to-orange-400/50 rounded-lg text-[10px] font-medium tracking-wide text-amber-100 transition-all duration-300 hover:scale-105 shadow-md">
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
                     <span>Xem bài tập trên GG drive</span>
                 </a>
-                <div class="text-xs tracking-wider font-light text-indigo-100/60" id="desktop-date-time">00:00 - Thursday</div>
+                <div class="text-[11px] tracking-wider font-light text-indigo-100/60" id="desktop-date-time">00:00 - Thursday</div>
             </div>
         </header>
 
@@ -478,14 +480,14 @@
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 1 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3">
-                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
-                                    <i data-lucide="folder-open" class="w-4 h-4 text-sky-400"></i>
+                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans">
+                                    <i data-lucide="folder-open" class="w-4 h-4 text-sky-400 font-sans"></i>
                                     Trình Mô Phỏng Quản Lý Tệp Tin (Click để tương tác)
                                 </p>
                                 <div class="grid grid-cols-3 gap-3 bg-black/40 p-3 rounded-lg border border-white/5 min-h-[140px] text-xs font-mono">
                                     <div class="col-span-1 border-r border-white/5 pr-2 space-y-1.5 text-slate-400 text-[10px]">
                                         <div class="flex items-center gap-1 text-indigo-300"><i data-lucide="monitor" class="w-3.5 h-3.5 font-sans"></i> This PC</div>
-                                        <div class="flex items-center gap-1 pl-3"><i data-lucide="hard-drive" class="w-3.5 h-3.5 font-sans"></i> Local Disk (C:)</div>
+                                        <div class="flex items-center gap-1 pl-3"><i data-lucide="hard-drive" class="w-3.5 h-3.5"></i> Local Disk (C:)</div>
                                         <div class="flex items-center gap-1 pl-6 text-amber-300"><i data-lucide="folder" class="w-3.5 h-3.5"></i> ThucHanh_...</div>
                                     </div>
                                     <div class="col-span-2 pl-2 space-y-2">
@@ -528,9 +530,9 @@
                                         <p class="text-slate-400 font-sans">Motivational Strategies in the Language Classroom. Clevedon: Multilingual Matters.</p>
                                         <p class="text-amber-300 mt-1">Đánh giá của mình: Sách này siêu nổi tiếng trong ngành Ngôn ngữ học luôn. Đọc xong mình vỡ ra bao nhiêu thứ về cách tạo động lực học ngoại ngữ. Thẩm quyền rất cao. ★★★★★</p>
                                     </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans font-sans">
                                         <p class="font-semibold text-slate-200">2. Gao, Y. (2018)</p>
-                                        <p class="text-slate-400 font-sans">‘Motivation in Chinese Language Learning among Vietnamese Students’, Modern Chinese Language Teaching, 12(2), pp. 45–60.</p>
+                                        <p class="text-slate-400 font-sans font-sans">‘Motivation in Chinese Language Learning among Vietnamese Students’, Modern Chinese Language Teaching, 12(2), pp. 45–60.</p>
                                         <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Bài báo này cực kỳ gần gũi vì tác giả khảo sát chính sinh viên Việt Nam tụi mình. Số liệu thực tế giúp mình hiểu rõ động cơ chọn ngôn ngữ này. ★★★★★</p>
                                     </div>
                                     <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
@@ -541,66 +543,66 @@
                                     <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
                                         <p class="font-semibold text-slate-200 font-sans">4. Nguyen, T. (2019)</p>
                                         <p class="text-slate-400 font-sans">‘Factors Influencing Motivation in Learning Chinese as a Second Language’, Language Learning, 69(4), pp. 1012–1030.</p>
-                                        <p class="text-amber-300 mt-1">Đánh giá của mình: Đăng trên một tạp chí ngôn ngữ học quốc tế hàng đầu thế giới với quy trình duyệt bài khắt phục khắt kẽ, số lượng trích dẫn cao. ★★★★★</p>
-                                    </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
-                                        <p class="font-semibold text-slate-200">5. Zhang, Q. (2021)</p>
-                                        <p class="text-slate-400 font-sans font-sans">‘The Role of Self-efficacy in Learning Chinese’, SpringerLink, pp. 1–15.</p>
-                                        <p class="text-amber-300 mt-1 font-sans font-sans">Đánh giá của mình: Bài viết của nhà xuất bản lớn, tập trung đánh giá niềm tin vào năng lực bản thân của sinh viên khi đối mặt với Hán tự phức tạp. ★★★★★</p>
-                                    </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
-                                        <p class="font-semibold text-slate-200">6. Wang, X. (2017)</p>
-                                        <p class="text-slate-400 font-sans">‘Intrinsic vs Extrinsic Motivation in Chinese Learning’, ResearchGate, pp. 1–12.</p>
-                                        <p class="text-amber-300 mt-1">Đánh giá của mình: Giúp mình hiểu sâu sắc về sự khác biệt giữa động lực bên trong (sự yêu thích) và áp lực bên ngoài (tìm kiếm việc làm). ★★★★★</p>
-                                    </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
-                                        <p class="font-semibold text-slate-200">7. Brown, H. D. (2014)</p>
-                                        <p class="text-slate-400 font-sans">Principles of Language Learning and Teaching. 6th edn. New York: Pearson.</p>
-                                        <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Cuốn sách gối đầu giường của bất cứ ai theo học sư phạm ngoại ngữ. Rất dày dặn, chi tiết và hệ thống. ★★★★★</p>
+                                        <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Đăng trên một tạp chí ngôn ngữ học quốc tế hàng đầu thế giới với quy trình duyệt bài khắt phục khắt kẽ, số lượng trích dẫn cao. ★★★★★</p>
                                     </div>
                                     <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans">
+                                        <p class="font-semibold text-slate-200">5. Zhang, Q. (2021)</p>
+                                        <p class="text-slate-400 font-sans">‘The Role of Self-efficacy in Learning Chinese’, SpringerLink, pp. 1–15.</p>
+                                        <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Bài viết của nhà xuất bản lớn, tập trung đánh giá niềm tin vào năng lực bản thân của sinh viên khi đối mặt với Hán tự phức tạp. ★★★★★</p>
+                                    </div>
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans">
+                                        <p class="font-semibold text-slate-200">6. Wang, X. (2017)</p>
+                                        <p class="text-slate-400 font-sans">‘Intrinsic vs Extrinsic Motivation in Chinese Learning’, ResearchGate, pp. 1–12.</p>
+                                        <p class="text-amber-300 mt-1 font-sans font-sans">Đánh giá của mình: Giúp mình hiểu sâu sắc về sự khác biệt giữa động lực bên trong (sự yêu thích) và áp lực bên ngoài (tìm kiếm việc làm). ★★★★★</p>
+                                    </div>
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans">
+                                        <p class="font-semibold text-slate-200 font-sans">7. Brown, H. D. (2014)</p>
+                                        <p class="text-slate-400 font-sans">Principles of Language Learning and Teaching. 6th edn. New York: Pearson.</p>
+                                        <p class="text-amber-300 mt-1">Đánh giá của mình: Cuốn sách gối đầu giường của bất cứ ai theo học sư phạm ngoại ngữ. Rất dày dặn, chi tiết và hệ thống. ★★★★★</p>
+                                    </div>
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans font-sans font-sans">
                                         <p class="font-semibold text-slate-200">8. Chinese.cn (2022)</p>
                                         <p class="text-slate-400 font-sans">Learning Chinese Online, Beijing: Chinese.cn Press.</p>
                                         <p class="text-amber-300 mt-1">Đánh giá của mình: Trang web chính thống từ trung tâm hợp tác giáo dục, dữ liệu thực tiễn tốt nhưng thiếu chiều sâu nghiên cứu học thuật. ★★★☆☆</p>
                                     </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
-                                        <p class="font-semibold text-slate-200 font-sans">9. He, L. (2016)</p>
-                                        <p class="text-slate-400 font-sans">‘Cultural Influence on Motivation in Learning Chinese’, Journal of Language and Cultural Education, 4(2), pp. 75–88.</p>
-                                        <p class="text-amber-300 mt-1">Đánh giá của mình: Nghiên cứu rất hay về tác động của yếu tố văn hóa và phim ảnh đối với lòng kiên trì luyện viết chữ Hán của học viên. ★★★★☆</p>
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans font-sans">
+                                        <p class="font-semibold text-slate-200">9. He, L. (2016)</p>
+                                        <p class="text-slate-400 font-sans font-sans font-sans font-sans font-sans">‘Cultural Influence on Motivation in Learning Chinese’, Journal of Language and Cultural Education, 4(2), pp. 75–88.</p>
+                                        <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Nghiên cứu rất hay về tác động của yếu tố văn hóa và phim ảnh đối với lòng kiên trì luyện viết chữ Hán của học viên. ★★★★☆</p>
                                     </div>
-                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
-                                        <p class="font-semibold text-slate-200 font-sans font-sans">10. Chen, Y. and Li, F. (2015)</p>
+                                    <div class="p-3 bg-black/25 border border-white/5 rounded-lg font-sans">
+                                        <p class="font-semibold text-slate-200">10. Chen, Y. and Li, F. (2015)</p>
                                         <p class="text-slate-400 font-sans">‘Using Technology to Enhance Motivation in Chinese Language Classes’, Educational Technology & Society, 18(3), pp. 45–55.</p>
-                                        <p class="text-amber-300 mt-1 font-sans">Đánh giá của mình: Chứng minh thực tế việc áp dụng công nghệ số và phần mềm giúp học viên bớt nản lòng, hào hứng học tập hơn nhiều. ★★★★★</p>
+                                        <p class="text-amber-300 font-sans">Đánh giá của mình: Chứng minh thực tế việc áp dụng công nghệ số và phần mềm giúp học viên bớt nản lòng, hào hứng học tập hơn nhiều. ★★★★★</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 2 -->
-                            <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 font-sans font-sans">
+                            <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 font-sans font-sans font-sans">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="sliders" class="w-4 h-4 text-indigo-400"></i>
                                     Trình Phân Tích Độ Tin Cậy Tài Liệu Nghiên Cứu (Chọn để xem)
                                 </p>
                                 <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
                                     <!-- Source list selector -->
-                                    <div class="md:col-span-2 flex flex-col gap-1 max-h-36 overflow-y-auto pr-1 font-sans">
+                                    <div class="md:col-span-2 flex flex-col gap-1 max-h-36 overflow-y-auto pr-1 font-sans font-sans">
                                         <button onclick="updateSourceMetrics(95, 92, 90, 'Dörnyei (2001) - Multilingual Matters')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Dörnyei (2001)</button>
-                                        <button onclick="updateSourceMetrics(98, 95, 92, 'Gao (2018) - Modern Chinese Teaching')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Gao (2018) - Vietnamese</button>
-                                        <button onclick="updateSourceMetrics(70, 65, 80, 'Chinese.cn (2022) - Portal Online')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Chinese.cn (2022)</button>
-                                        <button onclick="updateSourceMetrics(90, 88, 95, 'Brown (2014) - Pearson')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25 font-sans">Brown (2014)</button>
+                                        <button onclick="updateSourceMetrics(98, 95, 92, 'Gao (2018) - Modern Chinese Teaching')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25 font-sans font-sans font-sans font-sans">Gao (2018) - Vietnamese</button>
+                                        <button onclick="updateSourceMetrics(70, 65, 80, 'Chinese.cn (2022) - Portal Online')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25 font-sans">Chinese.cn (2022)</button>
+                                        <button onclick="updateSourceMetrics(90, 88, 95, 'Brown (2014) - Pearson')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Brown (2014)</button>
                                     </div>
                                     <!-- Metrics visualizers -->
                                     <div class="md:col-span-3 bg-black/40 p-3 rounded border border-white/5 space-y-2 text-[10px] font-sans">
-                                        <p class="font-bold text-slate-300" id="source-analyzing-title">Gao (2018) - Modern Chinese Teaching</p>
+                                        <p class="font-bold text-slate-300 font-sans font-sans" id="source-analyzing-title">Gao (2018) - Modern Chinese Teaching</p>
                                         <div class="space-y-1.5">
-                                            <div class="flex justify-between text-slate-400"><span>Thẩm quyền (Authority)</span><span id="metric-m1">98%</span></div>
+                                            <div class="flex justify-between text-slate-400 font-sans font-sans"><span>Thẩm quyền (Authority)</span><span id="metric-m1">98%</span></div>
                                             <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden"><div id="metric-bar-m1" class="h-full bg-gradient-to-r from-indigo-500 to-indigo-400" style="width: 98%;"></div></div>
                                             
-                                            <div class="flex justify-between text-slate-400"><span>Tính cập nhật (Recency)</span><span id="metric-m2">95%</span></div>
+                                            <div class="flex justify-between text-slate-400 font-sans font-sans font-sans font-sans font-sans font-sans"><span>Tính cập nhật (Recency)</span><span id="metric-m2">95%</span></div>
                                             <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden"><div id="metric-bar-m2" class="h-full bg-gradient-to-r from-amber-500 to-amber-400" style="width: 95%;"></div></div>
 
-                                            <div class="flex justify-between text-slate-400"><span>Độ chính xác phương pháp</span><span id="metric-m3">92%</span></div>
+                                            <div class="flex justify-between text-slate-400 font-sans"><span>Độ chính xác phương pháp</span><span id="metric-m3">92%</span></div>
                                             <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden"><div id="metric-bar-m3" class="h-full bg-gradient-to-r from-emerald-500 to-emerald-400" style="width: 92%;"></div></div>
                                         </div>
                                     </div>
@@ -609,14 +611,14 @@
                         </div>
 
                         <!-- TAB 3 -->
-                        <div id="tab3" class="tab-content hidden space-y-6">
-                            <div class="border-b border-white/5 pb-4 font-sans font-sans">
-                                <span class="text-[10px] tracking-widest text-amber-400 uppercase font-semibold">Bài tập 2 - Bài 3</span>
-                                <h3 class="text-xl font-bold serif-font text-slate-100 font-sans">Tổng quan về trí tuệ nhân tạo</h3>
+                        <div id="tab3" class="tab-content hidden space-y-6 font-sans">
+                            <div class="border-b border-white/5 pb-4 font-sans font-sans font-sans font-sans">
+                                <span class="text-[10px] tracking-widest text-amber-400 uppercase font-semibold font-sans">Bài tập 2 - Bài 3</span>
+                                <h3 class="text-xl font-bold serif-font text-slate-100">Tổng quan về trí tuệ nhân tạo</h3>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
-                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl">
-                                    <p class="font-bold text-amber-300 font-sans font-sans">Mục tiêu bài thực hành</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans font-sans">
+                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans font-sans font-sans">
+                                    <p class="font-bold text-amber-300">Mục tiêu bài thực hành</p>
                                     <p class="text-slate-400 font-light mt-1 text-justify font-sans">Luyện tập viết các câu lệnh từ cơ bản đến nâng cao để khám phá cách tối ưu hóa phản hồi của mô hình ngôn ngữ lớn, giúp phục vụ đắc lực cho các tác vụ học tập hàng ngày.</p>
                                 </div>
                                 <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans">
@@ -627,17 +629,17 @@
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Trải nghiệm thực tế của mình khi thực hành 3 tác vụ viết prompt học thuật:</p>
-                                <div class="space-y-3">
+                                <div class="space-y-3 font-sans font-sans font-sans">
                                     <div>
-                                        <p class="font-semibold text-amber-300 font-sans font-sans">Tác vụ 1: Tóm tắt bài báo khoa học dài</p>
+                                        <p class="font-semibold text-amber-300 font-sans">Tác vụ 1: Tóm tắt bài báo khoa học dài</p>
                                         <p class="text-slate-400">Prompt cơ bản cho ra kết quả tóm tắt thô sơ, đôi khi quá dài dòng hoặc bỏ sót ý. Prompt cải tiến khống chế được độ dài 150 từ và chỉ rõ trọng tâm. Với prompt nâng cao, mình gán vai trò trợ lý học thuật kết hợp kỹ thuật Chain-of-thought giúp AI trích xuất sắc sảo 3 luận điểm chính, lập bảng phân tích logic và đề xuất 3 từ khóa học thuật cực kỳ hữu ích cho việc tra cứu thông tin.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-amber-300 font-sans">Tác vụ 2: Giải thích khái niệm kỹ thuật phức tạp (Blockchain)</p>
-                                        <p class="text-slate-400 font-sans font-sans font-sans font-sans font-sans">Prompt ban đầu cho ra định nghĩa chính xác nhưng chứa quá nhiều biệt ngữ khó hiểu cho người mới bắt đầu. Với prompt nâng cao gán vai giảng viên, mình yêu cầu giải thích theo 5 phần (định nghĩa, cách hoạt động, ví dụ thực tế, ưu/nhược điểm, đối sánh dữ liệu) và cấm sử dụng các thuật ngữ như 'node', 'phi tập trung' hay 'sổ cái' mà không có sự giải nghĩa dễ hiểu.</p>
+                                        <p class="font-semibold text-amber-300">Tác vụ 2: Giải thích khái niệm kỹ thuật phức tạp (Blockchain)</p>
+                                        <p class="text-slate-400 font-sans">Prompt ban đầu cho ra định nghĩa chính xác nhưng chứa quá nhiều biệt ngữ khó hiểu cho người mới bắt đầu. Với prompt nâng cao gán vai giảng viên, mình yêu cầu giải thích theo 5 phần (định nghĩa, cách hoạt động, ví dụ thực tế, ưu/nhược điểm, đối sánh dữ liệu) và cấm sử dụng các thuật ngữ như 'node', 'phi tập trung' hay 'sổ cái' mà không có sự giải nghĩa dễ hiểu.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-amber-300">Tác vụ 3: Tạo bộ đề ôn tập HSK4 nhanh chóng</p>
+                                        <p class="font-semibold text-amber-300 font-sans">Tác vụ 3: Tạo bộ đề ôn tập HSK4 nhanh chóng</p>
                                         <p class="text-slate-400">Prompt cơ bản chỉ tạo được các câu hỏi ngẫu nhiên và không phân loại kỹ năng rõ rệt. Với prompt nâng cao gán vai giáo viên luyện thi, mình ràng buộc kết cấu bài test gồm 4 câu từ vựng, 3 câu ngữ pháp, 3 câu đọc hiểu, bắt buộc đưa ra đáp án và giải thích lỗi sai phổ biến của người học để giúp sinh viên tự học hiểu bản chất kiến thức một cách sâu sắc.</p>
                                     </div>
                                 </div>
@@ -645,23 +647,23 @@
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 3 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
-                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans">
+                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i>
                                     Prompt Compare-o-Vision Console (Bấm xem sự khác biệt)
                                 </p>
                                 <div class="flex gap-2 border-b border-white/5 pb-2">
-                                    <button onclick="togglePromptTask(1)" id="pt-btn-1" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400 font-sans font-sans">Tác vụ 1: Tóm tắt</button>
+                                    <button onclick="togglePromptTask(1)" id="pt-btn-1" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400 font-sans font-sans font-sans">Tác vụ 1: Tóm tắt</button>
                                     <button onclick="togglePromptTask(2)" id="pt-btn-2" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400">Tác vụ 2: Ẩn dụ Blockchain</button>
-                                    <button onclick="togglePromptTask(3)" id="pt-btn-3" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400">Tác vụ 3: Mini Test HSK4</button>
+                                    <button onclick="togglePromptTask(3)" id="pt-btn-3" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400 font-sans">Tác vụ 3: Mini Test HSK4</button>
                                 </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2 text-[10px] font-mono leading-relaxed text-justify font-sans">
-                                    <div class="p-3 bg-red-950/20 border border-red-500/20 rounded-lg">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2 text-[10px] font-mono leading-relaxed text-justify font-sans font-sans">
+                                    <div class="p-3 bg-red-950/20 border border-red-500/20 rounded-lg font-sans">
                                         <p class="font-bold text-red-300">Cơ Bản (Zero-shot)</p>
-                                        <p class="text-slate-400 mt-1" id="prompt-basic-text">"Tóm tắt bài viết sau: [Chèn văn bản]"</p>
+                                        <p class="text-slate-400 mt-1 font-sans" id="prompt-basic-text">"Tóm tắt bài viết sau: [Chèn văn bản]"</p>
                                     </div>
-                                    <div class="p-3 bg-indigo-950/20 border border-indigo-500/20 rounded-lg font-sans">
+                                    <div class="p-3 bg-indigo-950/20 border border-indigo-500/20 rounded-lg font-sans font-sans">
                                         <p class="font-bold text-indigo-300">Nâng Cao (C.L.E.A.R)</p>
-                                        <p class="text-slate-400 mt-1" id="prompt-advanced-text">"Bạn là một trợ lý học thuật chuyên hỗ trợ sinh viên đại học. Hãy đọc tài liệu dưới đây và thực hiện các bước sau..."</p>
+                                        <p class="text-slate-400 mt-1 font-sans" id="prompt-advanced-text">"Bạn là một trợ lý học thuật chuyên hỗ trợ sinh viên đại học. Hãy đọc tài liệu dưới đây và thực hiện các bước sau..."</p>
                                     </div>
                                 </div>
                             </div>
@@ -669,22 +671,22 @@
 
                         <!-- TAB 4 -->
                         <div id="tab4" class="tab-content hidden space-y-6">
-                            <div class="border-b border-white/5 pb-4 font-sans font-sans">
+                            <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-emerald-400 uppercase font-semibold font-sans font-sans">Bài tập 3 - Bài 4</span>
                                 <h3 class="text-xl font-bold serif-font text-slate-100">Giao tiếp và hợp tác trong môi trường số</h3>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans font-sans">
-                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
+                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl">
                                     <p class="font-bold text-amber-300">Mục tiêu bài thực hành</p>
                                     <p class="text-slate-400 font-light mt-1 text-justify font-sans">Ứng dụng thuần thục các nền tảng cộng tác trực tuyến để quản lý tiến độ, chia sẻ học liệu và soạn thảo báo cáo chung cho đề tài nhóm "Ứng dụng của AI trong lĩnh vực Ngoại ngữ".</p>
                                 </div>
                                 <div class="p-4 bg-white/5 border border-white/5 rounded-xl">
                                     <p class="font-bold text-indigo-300">Bài học kinh nghiệm rút ra</p>
-                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans">Việc chủ động thiết lập quy tắc quản trị từ đầu và phân chia rõ ràng trách nhiệm công việc giúp loại bỏ hoàn toàn hiện tượng chồng chéo thông tin hay thất lạc tư liệu.</p>
+                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans font-sans">Việc chủ động thiết lập quy tắc quản trị từ đầu và phân chia rõ ràng trách nhiệm công việc giúp loại bỏ hoàn toàn hiện tượng chồng chéo thông tin hay thất lạc tư liệu.</p>
                                 </div>
                             </div>
 
-                            <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
+                            <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans font-sans">
                                 <p class="font-bold text-slate-200">Nhật ký phối hợp công cụ trong dự án nhóm của mình:</p>
                                 <div class="space-y-3 text-[11px] leading-relaxed font-sans">
                                     <div>
@@ -692,41 +694,41 @@
                                         <p class="text-slate-400 font-sans">Trên không gian chung của nhóm, mình chịu trách nhiệm quản lý tiến độ cá nhân thông qua việc tạo lập các thẻ nhiệm vụ chi tiết: Tìm kiếm tài liệu giáo dục ngoại ngữ; Nghiên cứu các công cụ phổ biến; Tổng hợp lợi ích AI đối với người học; Phân tích thách thức đạo đức; Viết nội dung báo cáo nhóm và kiểm tra chỉnh sửa bản thảo. Việc di chuyển thẻ công việc liên tục giúp cả nhóm bám sát tiến độ, không sợ bị quên hay trễ deadline.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-emerald-300">2. Google Docs trong soạn thảo và biên tập đồng thời khoa học</p>
+                                        <p class="font-semibold text-emerald-300 font-sans">2. Google Docs trong soạn thảo và biên tập đồng thời khoa học</p>
                                         <p class="text-slate-400">Để tránh việc xung đột dữ liệu khi nhiều người sửa bài, nhóm sử dụng Google Docs để viết bài trực tuyến thời gian thực. Mình trực tiếp phụ trách soạn thảo Phần 1 (Khái niệm & nguyên lý hoạt động AI ngoại ngữ), Phần 2 (Lợi ích cá nhân hóa lộ trình, luyện phát âm, dịch thuật) và Phần 3 (Thách thức nguy cơ phụ thuộc, giảm tự duy độc lập). Góp ý chéo thông qua tính năng Comment và rà soát kỹ lưỡng Lịch sử phiên bản.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-emerald-300">3. Google Drive trong quản trị và bảo mật tài nguyên nhóm</p>
-                                        <p class="text-slate-400">Mình đã đứng ra trực tiếp quy hoạch cấu trúc thư mục số trên Google Drive gồm: Tài liệu tham khảo, Nội dung báo cáo, Hình ảnh minh họa, Slide thuyết trình, Nguồn nghiên cứu bổ sung với quy tắc đặt tên tệp thống nhất như BaoCao_AI_NgonNgu.docx để việc tra cứu của cả nhóm diễn ra nhanh chóng.</p>
+                                        <p class="font-semibold text-emerald-300 font-sans">3. Google Drive trong quản trị và bảo mật tài nguyên nhóm</p>
+                                        <p class="text-slate-400 font-sans font-sans">Mình đã đứng ra trực tiếp quy hoạch cấu trúc thư mục số trên Google Drive gồm: Tài liệu tham khảo, Nội dung báo cáo, Hình ảnh minh họa, Slide thuyết trình, Nguồn nghiên cứu bổ sung với quy tắc đặt tên tệp thống nhất như BaoCao_AI_NgonNgu.docx để việc tra cứu của cả nhóm diễn ra nhanh chóng.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 4 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
-                                <div class="flex justify-between items-center">
-                                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans font-sans">
+                                <div class="flex justify-between items-center font-sans">
+                                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans">
                                         <i data-lucide="users-2" class="w-4 h-4 text-emerald-400 font-sans"></i>
                                         Digital Collaboration Workspace
                                     </p>
                                     <div class="flex gap-1.5">
                                         <button onclick="toggleCollaborationView('trello')" id="collab-btn-trello" class="px-2 py-0.5 bg-indigo-500/20 text-[10px] rounded text-indigo-200">Trello Board</button>
-                                        <button onclick="toggleCollaborationView('drive')" id="collab-btn-drive" class="px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400 font-sans">GDrive Trees</button>
+                                        <button onclick="toggleCollaborationView('drive')" id="collab-btn-drive" class="px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400">GDrive Trees</button>
                                     </div>
                                 </div>
                                 
                                 <!-- Trello Simulated list -->
                                 <div id="collab-view-trello" class="grid grid-cols-3 gap-2 bg-black/40 p-3 rounded-lg min-h-[140px] text-[10px]">
-                                    <div class="p-2 bg-slate-900/50 rounded border border-white/5 space-y-1">
+                                    <div class="p-2 bg-slate-900/50 rounded border border-white/5 space-y-1 font-sans">
                                         <p class="font-bold text-indigo-300 uppercase text-[8px] font-sans">To Do</p>
                                         <div class="p-1 bg-white/5 rounded">Tìm tài liệu về AI ngoại ngữ</div>
-                                        <div class="p-1 bg-white/5 rounded">Tổng hợp lợi ích & thách thức</div>
+                                        <div class="p-1 bg-white/5 rounded font-sans">Tổng hợp lợi ích & thách thức</div>
                                     </div>
                                     <div class="p-2 bg-slate-900/50 rounded border border-white/5 space-y-1 font-sans">
-                                        <p class="font-bold text-amber-300 uppercase text-[8px] font-sans">Doing</p>
+                                        <p class="font-bold text-amber-300 uppercase text-[8px]">Doing</p>
                                         <div class="p-1 bg-white/5 rounded">Biên soạn nội dung Google Docs</div>
                                     </div>
-                                    <div class="p-2 bg-slate-900/50 rounded border border-white/5 space-y-1 font-sans">
+                                    <div class="p-2 bg-slate-900/50 rounded border border-white/5 space-y-1">
                                         <p class="font-bold text-emerald-300 uppercase text-[8px]">Done</p>
                                         <div class="p-1 bg-emerald-500/10 border border-emerald-500/20 rounded">Thiết lập tiến độ Trello</div>
                                     </div>
@@ -736,9 +738,9 @@
                                 <div id="collab-view-drive" class="hidden bg-black/40 p-3 rounded-lg min-h-[140px] text-[10px] font-mono space-y-1.5">
                                     <p class="text-emerald-400 font-sans">E:/GoogleDrive/Ứng_Dụng_AI_Ngoại_Ngữ/</p>
                                     <p class="pl-4 text-slate-400 font-sans">├── 1. Tài liệu tham khảo/</p>
-                                    <p class="pl-4 text-slate-400 font-sans font-sans">├── 2. Nội dung báo cáo/</p>
-                                    <p class="pl-8 text-amber-300 font-sans font-sans">└── BaoCao_AI_NgonNgu.docx</p>
-                                    <p class="pl-4 text-slate-400 font-sans font-sans">├── 3. Hình ảnh minh họa/</p>
+                                    <p class="pl-4 text-slate-400 font-sans">├── 2. Nội dung báo cáo/</p>
+                                    <p class="pl-8 text-amber-300 font-sans">└── BaoCao_AI_NgonNgu.docx</p>
+                                    <p class="pl-4 text-slate-400 font-sans">├── 3. Hình ảnh minh họa/</p>
                                     <p class="pl-4 text-slate-400 font-sans">└── 4. Slide thuyết trình/</p>
                                 </div>
                             </div>
@@ -746,66 +748,66 @@
 
                         <!-- TAB 5 -->
                         <div id="tab5" class="tab-content hidden space-y-6">
-                            <div class="border-b border-white/5 pb-4">
+                            <div class="border-b border-white/5 pb-4 font-sans font-sans">
                                 <span class="text-[10px] tracking-widest text-purple-400 uppercase font-semibold">Bài tập 2 - Bài 5</span>
                                 <h3 class="text-xl font-bold serif-font text-slate-100">Sáng tạo nội dung số</h3>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
                                 <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans">
-                                    <p class="font-bold text-amber-300">Mục tiêu bài thực hành</p>
+                                    <p class="font-bold text-amber-300 font-sans">Mục tiêu bài thực hành</p>
                                     <p class="text-slate-400 font-light mt-1 text-justify font-sans">Ứng dụng quy trình đồng sáng tạo cộng tác Người - Máy (Human-AI Collaboration) thông qua kết hợp linh hoạt Gemini, DALL-E 3, Canva AI để thiết kế bài blog chuyên sâu "AI và tương lai ngành giáo dục".</p>
                                 </div>
-                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans">
+                                <div class="p-4 bg-white/5 border border-white/5 rounded-xl font-sans font-sans">
                                     <p class="font-bold text-indigo-300">Bài học kinh nghiệm rút ra</p>
-                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans font-sans">AI xuất sắc trong vai trò trợ lý cung cấp tư liệu thô ban đầu, loại bỏ rào cản trang giấy trắng. Tuy nhiên, năng lực hoàn thiện thẩm mỹ và cá nhân hóa bối cảnh của con người mới quyết định độ cuốn hút của ấn phẩm.</p>
+                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans">AI xuất sắc trong vai trò trợ lý cung cấp tư liệu thô ban đầu, loại bỏ rào cản trang giấy trắng. Tuy nhiên, năng lực hoàn thiện thẩm mỹ và cá nhân hóa bối cảnh của con người mới quyết định độ cuốn hút của ấn phẩm.</p>
                                 </div>
                             </div>
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Hành trình đồng sáng tạo bài viết "AI đã tái định hình lớp học tương lai như thế nào?" của mình:</p>
-                                <div class="space-y-3 text-[11px] leading-relaxed font-sans">
+                                <div class="space-y-3 text-[11px] leading-relaxed font-sans font-sans">
                                     <div>
                                         <p class="font-semibold text-purple-300 font-sans">Giai đoạn 1: Khởi tạo ý tưởng và viết nội dung thô bằng Google Gemini</p>
-                                        <p class="text-slate-400 font-sans">Mình viết prompt đóng vai một chuyên gia giáo dục và biên soạn nội dung, lên dàn ý 5 phần (mở đầu, cá nhân hóa lộ trình học, vai trò của người thầy, thách thức và kết luận). Sau đó, viết chi tiết cho phần Cá nhân hóa học tập nhờ AI. Đóng góp sáng tạo của mình thể hiện qua việc chỉnh sửa câu chữ dịch thô sượng (như sửa "thuật toán thích ứng" thành "hệ thống tự điều chỉnh") và lồng ghép thêm ví dụ thực tế học viên Việt Nam dùng Elsa Speak sửa phát âm tiếng Anh hàng ngày.</p>
+                                        <p class="text-slate-400">Mình viết prompt đóng vai một chuyên gia giáo dục và biên soạn nội dung, lên dàn ý 5 phần (mở đầu, cá nhân hóa lộ trình học, vai trò của người thầy, thách thức và kết luận). Sau đó, viết chi tiết cho phần Cá nhân hóa học tập nhờ AI. Đóng góp sáng tạo của mình thể hiện qua việc chỉnh sửa câu chữ dịch thô sượng (như sửa "thuật toán thích ứng" thành "hệ thống tự điều chỉnh") và lồng ghép thêm ví dụ thực tế học viên Việt Nam dùng Elsa Speak sửa phát âm tiếng Anh hàng ngày.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-purple-300 font-sans font-sans">Giai đoạn 2: Sáng tạo hình ảnh minh họa độc quyền bằng Bing Image Creator / DALL-E 3</p>
-                                        <p class="text-slate-400 font-sans">Mình đã tỉ mỉ viết prompt mô tả một lớp học tương lai đầy tính viễn tưởng nơi một nhóm học sinh đang tương tác với trợ lý ảo và quả địa cầu ảo ảnh 3D (hologram) dưới ánh sáng ấm áp, đậm tính nghệ thuật. Việc này giúp tạo ra ảnh minh họa sắc nét độc quyền, thay vì dùng ảnh mạng trùng lặp.</p>
+                                        <p class="font-semibold text-purple-300 font-sans">Giai đoạn 2: Sáng tạo hình ảnh minh họa độc quyền bằng Bing Image Creator / DALL-E 3</p>
+                                        <p class="text-slate-400">Mình đã tỉ mỉ viết prompt mô tả một lớp học tương lai đầy tính viễn tưởng nơi một nhóm học sinh đang tương tác với trợ lý ảo và quả địa cầu ảo ảnh 3D (hologram) dưới ánh sáng ấm áp, đậm tính nghệ thuật. Việc này giúp tạo ra ảnh minh họa sắc nét độc quyền, thay vì dùng ảnh mạng trùng lặp.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-purple-300 font-sans">Giai đoạn 3: Thiết kế ảnh bìa truyền thông (Canva AI - Magic Design)</p>
-                                        <p class="text-slate-400 font-sans">Truy cập Canva -> Magic Design -> Prompt thiết kế ảnh bìa phong cách công nghệ hiện đại tông xanh tím. Đóng góp sáng tạo cá nhân thể hiện qua việc chọn mẫu chữ bên trái, khoảng trống bên hợp để chèn ảnh DALL-E 3 vào, đổi font Montserrat hiện đại và định hình lại tiêu đề chính: "AI ĐÃ TÁI ĐỊNH HÌNH LỚP HỌC TƯƠNG LAI NHƯ THẾ NÀO?".</p>
+                                        <p class="font-semibold text-purple-300 font-sans font-sans font-sans">Giai đoạn 3: Thiết kế ảnh bìa truyền thông (Canva AI - Magic Design)</p>
+                                        <p class="text-slate-400">Truy cập Canva -> Magic Design -> Prompt thiết kế ảnh bìa phong cách công nghệ hiện đại tông xanh tím. Đóng góp sáng tạo cá nhân thể hiện qua việc chọn mẫu chữ bên trái, khoảng trống bên hợp để chèn ảnh DALL-E 3 vào, đổi font Montserrat hiện đại và định hình lại tiêu đề chính: "AI ĐÃ TÁI ĐỊNH HÌNH LỚP HỌC TƯƠNG LAI NHƯ THẾ NÀO?".</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Bảng So Sánh Công Cụ Thực Tế -->
                             <div class="space-y-3">
-                                <p class="text-xs font-semibold text-slate-200 font-sans">Bảng đối chiếu ưu điểm và hạn chế học thuật của hệ thống công cụ:</p>
-                                <div class="overflow-x-auto rounded-xl border border-white/10">
+                                <p class="text-xs font-semibold text-slate-200">Bảng đối chiếu ưu điểm và hạn chế học thuật của hệ thống công cụ:</p>
+                                <div class="overflow-x-auto rounded-xl border border-white/10 font-sans font-sans">
                                     <table class="w-full text-[10px] text-left bg-black/15 text-slate-300">
-                                        <thead class="bg-white/5 text-[9px] text-slate-400 uppercase tracking-wider border-b border-white/10">
+                                        <thead class="bg-white/5 text-[9px] text-slate-400 uppercase tracking-wider border-b border-white/10 font-sans">
                                             <tr>
                                                 <th class="px-3 py-2 font-sans">Công cụ AI</th>
-                                                <th class="px-3 py-2 font-sans">Ưu điểm thực tế</th>
-                                                <th class="px-3 py-2 font-sans">Hạn chế gặp phải</th>
+                                                <th class="px-3 py-2">Ưu điểm thực tế</th>
+                                                <th class="px-3 py-2">Hạn chế gặp phải</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="divide-y divide-white/5 font-light font-sans">
+                                        <tbody class="divide-y divide-white/5 font-light font-sans font-sans font-sans font-sans">
                                             <tr>
                                                 <td class="px-3 py-2.5 font-medium text-slate-200">Google Gemini</td>
                                                 <td class="px-3 py-2">Tốc độ xử lý cực nhanh dưới 5 giây, hiểu ngữ cảnh bài viết sâu sắc và lập luận mạch lạc.</td>
-                                                <td class="px-3 py-2">Văn phong đôi khi rập khuôn, lặp ý lỏng lẻo và thiếu cảm xúc cá nhân thực tế.</td>
+                                                <td class="px-3 py-2 font-sans font-sans">Văn phong đôi khi rập khuôn, lặp ý lỏng lẻo và thiếu cảm xúc cá nhân thực tế.</td>
                                             </tr>
                                             <tr>
                                                 <td class="px-3 py-2.5 font-medium text-slate-200">DALL-E 3</td>
                                                 <td class="px-3 py-2">Tạo ảnh phong cảnh độc đáo, màu sắc rực rỡ, độ phân giải sắc nét xuất sắc.</td>
-                                                <td class="px-3 py-2 font-sans">Các chi tiết nhỏ như ngón tay người hoặc văn bản chữ dễ bị méo lỗi kết cấu.</td>
+                                                <td class="px-3 py-2">Các chi tiết nhỏ như ngón tay người hoặc văn bản chữ dễ bị méo lỗi kết cấu.</td>
                                             </tr>
                                             <tr>
                                                 <td class="px-3 py-2.5 font-medium text-slate-200">Canva AI</td>
                                                 <td class="px-3 py-2">Giao diện kéo thả dễ dùng, thư viện mẫu bố cục đa dạng cho người không chuyên.</td>
-                                                <td class="px-3 py-2 font-sans font-sans">Các mẫu đề xuất tự động còn tương đối đơn giản, vẫn đòi hỏi chỉnh sửa thủ công nhiều.</td>
+                                                <td class="px-3 py-2">Các mẫu đề xuất tự động còn tương đối đơn giản, vẫn đòi hỏi chỉnh sửa thủ công nhiều.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -814,13 +816,13 @@
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 5 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
-                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans">
                                     <i data-lucide="palette" class="w-4 h-4 text-purple-400"></i>
                                     Trình Mô Phỏng Sáng Tạo Ấn Phẩm Du Lịch (Bấm chạy thử)
                                 </p>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
-                                    <div class="space-y-2">
-                                        <button onclick="triggerAICampaignGeneration()" class="w-full py-2 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded text-[10px] font-bold flex items-center justify-center gap-1 font-sans">
+                                    <div class="space-y-2 font-sans">
+                                        <button onclick="triggerAICampaignGeneration()" class="w-full py-2 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white rounded text-[10px] font-bold flex items-center justify-center gap-1">
                                             <i data-lucide="play" class="w-3.5 h-3.5"></i> Chạy Chiến Dịch AI Sáng Tạo
                                         </button>
                                         <div class="p-2.5 bg-black/40 rounded border border-white/5 text-[9px] font-mono leading-relaxed" id="generation-console-log">
@@ -848,29 +850,29 @@
                                 </div>
                                 <div class="p-4 bg-white/5 border border-white/5 rounded-xl">
                                     <p class="font-bold text-indigo-300">Bài học kinh nghiệm rút ra</p>
-                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans font-sans font-sans">AI chỉ được phép đóng vai trò là Trợ lý hỗ trợ quy trình, tuyệt đối không thể thay thế cho chủ thể tư duy độc lập của chính bản thân người học.</p>
+                                    <p class="text-slate-400 font-light mt-1 text-justify font-sans">AI chỉ được phép đóng vai trò là Trợ lý hỗ trợ quy trình, tuyệt đối không thể thay thế cho chủ thể tư duy độc lập của chính bản thân người học.</p>
                                 </div>
                             </div>
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Chi tiết bộ 6 nguyên tắc vàng của Phạm Ngọc Ngân Châm:</p>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[10px] leading-relaxed font-sans">
-                                    <div class="p-2 bg-black/20 rounded border border-white/5 font-sans"><strong>Nguyên tắc 1: Ý tưởng gốc (Original Intent First):</strong> Ý tưởng chính, cấu trúc xương sống phải do bộ não mình tự tư duy trước khi nhờ AI hỗ trợ.</div>
+                                    <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 1: Ý tưởng gốc (Original Intent First):</strong> Ý tưởng chính, cấu trúc xương sống phải do bộ não mình tự tư duy trước khi nhờ AI hỗ trợ.</div>
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 2: Nghi ngờ mặc định & Kiểm chứng bắt buộc:</strong> Luôn xem thông tin AI là tham khảo, đối chiếu chéo sách vở và báo cáo chính thống.</div>
-                                    <div class="p-2 bg-black/20 rounded border border-white/5 font-sans"><strong>Nguyên tắc 3: Minh bạch tuyệt đối:</strong> Thành thật khai báo mức độ tham gia của AI và chuẩn hóa trích dẫn theo định dạng APA.</div>
+                                    <div class="p-2 bg-black/20 rounded border border-white/5 font-sans font-sans"><strong>Nguyên tắc 3: Minh bạch tuyệt đối:</strong> Thành thật khai báo mức độ tham gia của AI và chuẩn hóa trích dẫn theo định dạng APA.</div>
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 4: Không sao chép trực tiếp (Zero Raw Copy-Paste):</strong> Tuyệt đối không bê nguyên văn quá 1 câu thô của AI, tự paraphrase lại bằng giọng văn cá nhân.</div>
-                                    <div class="p-2 bg-black/20 rounded border border-white/5 font-sans"><strong>Nguyên tắc 5: Bảo mật dữ liệu học thuật:</strong> Tuyệt đối không tải lên AI công cộng tài liệu chưa công bố của giảng viên, đề thi nội bộ.</div>
+                                    <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 5: Bảo mật dữ liệu học thuật:</strong> Tuyệt đối không tải lên AI công cộng tài liệu chưa công bố của giảng viên, đề thi nội bộ.</div>
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 6: Lấy năng lực làm gốc (Skill Over Speed):</strong> Tuyệt đối không lạm dụng AI làm bài nhanh đối phó deadline, chỉ dùng để làm sâu sắc nhận thức.</div>
                                 </div>
                             </div>
 
                             <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 6 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
-                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                                <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-sans">
                                     <i data-lucide="shield-check" class="w-4 h-4 text-rose-400"></i>
                                     Infographic Tuyên Truyền 3 Bước (Click xem chi tiết)
                                 </p>
-                                <div class="space-y-1.5 text-[10px]">
+                                <div class="space-y-1.5 text-[10px] font-sans">
                                     <div onclick="toggleAccordionStep(1)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors">
                                         <span class="font-semibold text-rose-300">✓ Nên: Động não phát triển ý tưởng & giải thích khái niệm</span>
                                         <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400" id="ac-arrow-1"></i>
@@ -879,15 +881,15 @@
                                         Sử dụng AI như gia sư ảo tìm kiếm các góc tiếp cận mới, gợi ý khung dàn ý tổng quan cho bài viết hoặc làm rõ thuật ngữ học thuật khó hiểu.
                                     </div>
 
-                                    <div onclick="toggleAccordionStep(2)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors font-sans">
+                                    <div onclick="toggleAccordionStep(2)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors">
                                         <span class="font-semibold text-rose-300 font-sans">✗ Không nên: Copy-paste 100% tệp tin & tin tưởng mù quáng</span>
                                         <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400" id="ac-arrow-2"></i>
                                     </div>
-                                    <div id="ac-desc-2" class="hidden p-2.5 bg-black/30 text-slate-400 leading-relaxed rounded border-l-2 border-rose-500 font-light text-justify font-sans font-sans">
+                                    <div id="ac-desc-2" class="hidden p-2.5 bg-black/30 text-slate-400 leading-relaxed rounded border-l-2 border-rose-500 font-light text-justify font-sans">
                                         Tuyệt đối tránh sao chép thô nguyên bản văn bản của AI để nộp bài, hoặc tin tưởng hoàn toàn vào các biểu đồ số liệu do AI tự thêu dệt ảo giác.
                                     </div>
 
-                                    <div onclick="toggleAccordionStep(3)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors">
+                                    <div onclick="toggleAccordionStep(3)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors font-sans">
                                         <span class="font-semibold text-rose-300">✓ Nên: Hiệu đính ngôn ngữ & Trích dẫn minh bạch</span>
                                         <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400" id="ac-arrow-3"></i>
                                     </div>
@@ -905,9 +907,9 @@
             <!-- APPLICATION 3: SUMMARY & REFLECTION WINDOW -->
             <div id="win-summary" class="app-window w-[480px] h-[520px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10" style="left: 450px; top: 180px;">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2 font-sans font-sans">
                         <i data-lucide="award" class="w-4 h-4 text-rose-300"></i>
-                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase">Báo cáo tổng kết chặng đường</span>
+                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase font-sans">Báo cáo tổng kết chặng đường</span>
                     </div>
                     <div class="flex items-center gap-2 window-control-btn">
                         <button onclick="closeWindow('win-summary')" class="w-3.5 h-3.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none flex items-center justify-center"><i data-lucide="x" class="w-2.5 h-2.5 text-white"></i></button>
@@ -915,13 +917,13 @@
                 </div>
                 
                 <div class="flex-grow overflow-y-auto p-6 space-y-6">
-                    <div class="text-center pb-4 border-b border-white/5">
+                    <div class="text-center pb-4 border-b border-white/5 font-sans">
                         <span class="text-[10px] tracking-widest text-rose-300 uppercase font-semibold">Tự đánh giá hành trình</span>
-                        <h3 class="text-2xl font-bold serif-font text-slate-100 font-sans">Nhìn Lại Hành Trình Sáng Tạo & Đổi Mới</h3>
+                        <h3 class="text-2xl font-bold serif-font text-slate-100">Nhìn Lại Hành Trình Sáng Tạo & Đổi Mới</h3>
                     </div>
 
                     <div class="space-y-4 text-xs font-light text-justify font-sans">
-                        <div class="space-y-1.5 font-sans font-sans">
+                        <div class="space-y-1.5 font-sans">
                             <p class="font-bold text-amber-300 flex items-center gap-1.5 font-sans">
                                 <i data-lucide="trending-up" class="w-4 h-4 text-amber-400"></i>
                                 Thuận Lợi Khách Quan
@@ -941,7 +943,7 @@
                         </div>
                         <div class="space-y-1.5 font-sans">
                             <p class="font-bold text-indigo-400 flex items-center gap-1.5 font-sans">
-                                <i data-lucide="book-open" class="w-4 h-4 text-indigo-400 font-sans font-sans font-sans"></i>
+                                <i data-lucide="book-open" class="w-4 h-4 text-indigo-400"></i>
                                 Bài học kinh nghiệm lâu dài
                             </p>
                             <p class="text-slate-400 leading-relaxed font-sans">
@@ -956,18 +958,18 @@
             <div id="win-gallery" class="app-window w-[850px] h-[610px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10" style="left: 320px; top: 120px;">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
                     <div class="flex items-center gap-2">
-                        <i data-lucide="image" class="w-4 h-4 text-sky-300 font-sans"></i>
-                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase font-sans font-sans">Thư Viện Ảnh & Kỷ Niệm</span>
+                        <i data-lucide="image" class="w-4 h-4 text-sky-300"></i>
+                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase font-sans">Thư Viện Ảnh & Kỷ Niệm</span>
                     </div>
-                    <div class="flex items-center gap-2 window-control-btn font-sans">
+                    <div class="flex items-center gap-2 window-control-btn font-sans font-sans">
                         <button onclick="closeWindow('win-gallery')" class="w-3.5 h-3.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none flex items-center justify-center">
                             <i data-lucide="x" class="w-2.5 h-2.5 text-white"></i>
                         </button>
                     </div>
                 </div>
                 
-                <div class="flex-grow overflow-y-auto p-6 font-sans">
-                    <div class="border-b border-white/5 pb-4 mb-6 font-sans">
+                <div class="flex-grow overflow-y-auto p-6 font-sans font-sans">
+                    <div class="border-b border-white/5 pb-4 mb-6">
                         <span class="text-[10px] tracking-widest text-sky-400 uppercase font-semibold">Hình ảnh thực tế</span>
                         <h3 class="text-xl font-bold serif-font text-slate-100">Khoảnh Khắc Kỷ Niệm & Học Tập</h3>
                     </div>
@@ -977,8 +979,8 @@
                         <!-- Ảnh 1 -->
                         <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 1.jpg', 'Hình 1: Chân dung cá nhân - Phạm Ngọc Ngân Châm')">
                             <img src="Hình 1.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 1">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center font-sans">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1 font-sans">
                                     <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
                                 </span>
                             </div>
@@ -987,7 +989,7 @@
                         <!-- Ảnh 2 -->
                         <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 2.jpg', 'Hình 2: Minh chứng thực hành bài tập và tự học nghiên cứu')">
                             <img src="Hình 2.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 2">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center font-sans">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
                                     <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
                                 </span>
@@ -997,7 +999,7 @@
                         <!-- Ảnh 3 -->
                         <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 3.jpg', 'Hình 3: Hoạt động học tập, trao đổi ý kiến nhóm trực tuyến')">
                             <img src="Hình 3.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 3">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center font-sans">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
                                     <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
                                 </span>
@@ -1006,8 +1008,8 @@
 
                         <!-- Ảnh 4 -->
                         <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 4.jpg', 'Hình 4: Kỷ niệm lớp học phần Ngôn ngữ & Văn hóa Trung Quốc 25C3')">
-                            <img src="Hình 4.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 4 font-sans font-sans">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <img src="Hình 4.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 4">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center font-sans">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
                                     <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
                                 </span>
@@ -1043,9 +1045,9 @@
                     <div>
                         <p class="text-xs text-slate-400 font-light mb-4">Các tệp tin được phát hiện đã bị xóa trong quá trình thực hành Bài Tập 1 (Quản lý tệp tin). Bạn có thể khôi phục chúng lại về màn hình nền:</p>
                         
-                        <div class="space-y-2 font-sans" id="recycle-list">
+                        <div class="space-y-2 font-sans" id="recycle-list font-sans font-sans">
                             <!-- Item 1 -->
-                            <div id="recycle-item-1" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans">
+                            <div id="recycle-item-1" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans font-sans font-sans">
                                 <div class="flex items-center gap-3">
                                     <i data-lucide="file-text" class="w-5 h-5 text-indigo-300"></i>
                                     <div>
@@ -1053,15 +1055,15 @@
                                         <p class="text-[10px] text-slate-500 font-mono">Đường dẫn gốc: C:/ThucHanh_PhamNgocNganCham/TaiLieu</p>
                                     </div>
                                 </div>
-                                <button onclick="restoreRecycleItem('recycle-item-1', 'GhiChuQuanTrong.txt')" class="px-2.5 py-1 bg-indigo-500/20 hover:bg-indigo-500/35 border border-indigo-400/30 text-[10px] font-medium tracking-wide text-indigo-300 rounded transition-all font-sans font-sans">Khôi phục</button>
+                                <button onclick="restoreRecycleItem('recycle-item-1', 'GhiChuQuanTrong.txt')" class="px-2.5 py-1 bg-indigo-500/20 hover:bg-indigo-500/35 border border-indigo-400/30 text-[10px] font-medium tracking-wide text-indigo-300 rounded transition-all">Khôi phục</button>
                             </div>
                             <!-- Item 2 -->
-                            <div id="recycle-item-2" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans">
-                                <div class="flex items-center gap-3 font-sans">
+                            <div id="recycle-item-2" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans font-sans font-sans">
+                                <div class="flex items-center gap-3 font-sans font-sans">
                                     <i data-lucide="file-text" class="w-5 h-5 text-indigo-300 font-sans"></i>
                                     <div>
                                         <p class="text-xs font-semibold text-slate-200">DiChuyen.txt</p>
-                                        <p class="text-[10px] text-slate-500 font-mono font-sans font-sans">Đường dẫn gốc: C:/ThucHanh_PhamNgocNganCham</p>
+                                        <p class="text-[10px] text-slate-500 font-mono">Đường dẫn gốc: C:/ThucHanh_PhamNgocNganCham</p>
                                     </div>
                                 </div>
                                 <button onclick="restoreRecycleItem('recycle-item-2', 'DiChuyen.txt')" class="px-2.5 py-1 bg-indigo-500/20 hover:bg-indigo-500/35 border border-indigo-400/30 text-[10px] font-medium tracking-wide text-indigo-300 rounded transition-all">Khôi phục</button>
@@ -1084,10 +1086,10 @@
                         <span id="text-viewer-title" class="text-xs font-bold text-slate-700 tracking-wide font-sans">Xem tập tin</span>
                     </div>
                     <div class="window-control-btn font-sans">
-                        <button onclick="closeWindow('win-text-viewer')" class="w-3 h-3 rounded-full bg-rose-500 focus:outline-none"></button>
+                        <button onclick="closeWindow('win-text-viewer')" class="w-3 h-3 rounded-full bg-rose-500 focus:outline-none font-sans"></button>
                     </div>
                 </div>
-                <div class="flex-grow p-5 bg-white/95 font-mono text-xs overflow-y-auto leading-relaxed text-slate-700">
+                <div class="flex-grow p-5 bg-white/95 font-mono text-xs overflow-y-auto leading-relaxed text-slate-700 font-sans">
                     <div id="text-viewer-content">Nội dung tập tin khôi phục...</div>
                 </div>
             </div>
@@ -1095,17 +1097,17 @@
         </div>
 
         <!-- LIGHTBOX DI ĐỘNG -->
-        <div id="lightbox" class="fixed inset-0 bg-black/90 z-[99999] hidden flex-col items-center justify-center p-4 font-sans font-sans" onclick="closeLightbox()">
+        <div id="lightbox" class="fixed inset-0 bg-black/90 z-[99999] hidden flex-col items-center justify-center p-4 font-sans font-sans font-sans" onclick="closeLightbox()">
             <button class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors animate-pulse" onclick="closeLightbox()">
                 <i data-lucide="x" class="w-8 h-8 font-sans"></i>
             </button>
-            <img id="lightbox-img" src="" class="max-w-full max-h-[80vh] rounded-lg object-contain shadow-2xl transition-all duration-300" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" class="max-w-full max-h-[80vh] rounded-lg object-contain shadow-2xl transition-all duration-300 font-sans font-sans" onclick="event.stopPropagation()">
             <p id="lightbox-caption" class="text-white/80 text-sm mt-4 tracking-wide font-light"></p>
         </div>
 
         <!-- ==================== WINDOWS SYSTEM START MENU ==================== -->
         <div id="start-menu" class="absolute bottom-20 left-1/2 -translate-x-1/2 w-[480px] glass-panel-dark rounded-2xl shadow-2xl p-6 flex flex-col text-white border border-white/15 opacity-0 pointer-events-none scale-95 transition-all duration-300 z-[999]">
-            <div class="flex items-center gap-4 border-b border-white/10 pb-5 mb-5 font-sans font-sans">
+            <div class="flex items-center gap-4 border-b border-white/10 pb-5 mb-5 font-sans font-sans font-sans font-sans font-sans">
                 <div class="relative w-[72px] h-[72px] rounded-full p-0.5 bg-white/20 overflow-hidden font-sans">
                     <img src="Hình 1.jpg" alt="Phạm Ngọc Ngân Châm" class="w-full h-full object-cover rounded-full">
                 </div>
@@ -1126,10 +1128,10 @@
                     <span>Tài Liệu Toàn Bộ Bài Tập</span>
                 </button>
                 <button onclick="openWindow('win-summary'); toggleStartMenu();" class="w-full text-left p-2.5 hover:bg-white/5 rounded-lg text-[15px] font-medium flex items-center gap-4 transition-colors text-rose-200">
-                    <i data-lucide="award" class="w-6 h-6 text-rose-400 font-sans font-sans"></i>
+                    <i data-lucide="award" class="w-6 h-6 text-rose-400"></i>
                     <span>Tổng Kết Cuối Kỳ</span>
                 </button>
-                <button onclick="openWindow('win-gallery'); toggleStartMenu();" class="w-full text-left p-2.5 hover:bg-white/5 rounded-lg text-[15px] font-medium flex items-center gap-4 transition-colors text-sky-200">
+                <button onclick="openWindow('win-gallery'); toggleStartMenu();" class="w-full text-left p-2.5 hover:bg-white/5 rounded-lg text-[15px] font-medium flex items-center gap-4 transition-colors text-sky-200 font-sans">
                     <i data-lucide="image" class="w-6 h-6 text-sky-400"></i>
                     <span>Thư Viện Ảnh</span>
                 </button>
@@ -1139,50 +1141,50 @@
                 </a>
             </div>
 
-            <div class="border-t border-white/10 mt-5 pt-4 flex justify-between items-center text-[15px] text-slate-400 font-sans font-sans font-sans">
-                <button onclick="lockScreen()" class="flex items-center gap-2 px-[18px] py-[9px] bg-rose-500/20 hover:bg-rose-500/35 border border-rose-400/30 rounded text-rose-300 font-medium tracking-wide transition-colors font-sans">
+            <div class="border-t border-white/10 mt-5 pt-4 flex justify-between items-center text-[15px] text-slate-400 font-sans font-sans">
+                <button onclick="lockScreen()" class="flex items-center gap-2 px-[18px] py-[9px] bg-rose-500/20 hover:bg-rose-500/35 border border-rose-400/30 rounded text-rose-300 font-medium tracking-wide transition-colors">
                     <i data-lucide="lock" class="w-[21px] h-[21px]"></i>
                     <span>Khóa máy</span>
                 </button>
-                <span class="font-light tracking-wider font-sans font-sans">Windows 11 Dreamy OS</span>
+                <span class="font-light tracking-wider">Windows 11 Dreamy OS</span>
             </div>
         </div>
 
-        <!-- ==================== SYSTEM TASKBAR (Sized down by 30%) ==================== -->
-        <footer class="w-full max-w-[800px] mx-auto h-[50px] glass-taskbar rounded-2xl flex items-center justify-between px-6 shadow-2xl z-50">
+        <!-- ==================== SYSTEM TASKBAR (Sized down by 30% further to h-[38px] & max-w-[560px]) ==================== -->
+        <footer class="w-full max-w-[560px] mx-auto h-[38px] glass-taskbar rounded-xl flex items-center justify-between px-4 shadow-2xl z-50">
             <div class="flex items-center gap-2 text-white/75 font-sans">
-                <i data-lucide="cloud-sun" class="w-5 h-5 text-amber-300"></i>
-                <span id="weather-info" class="text-xs font-light hidden sm:inline-block font-sans">Đang tải... • Hà Nội</span>
+                <i data-lucide="cloud-sun" class="w-4 h-4 text-amber-300"></i>
+                <span id="weather-info" class="text-[10px] font-light hidden sm:inline-block font-sans">Đang tải... • Hà Nội</span>
             </div>
 
             <div class="flex items-center gap-3">
-                <button onclick="toggleStartMenu()" class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-indigo-200 hover:text-white transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
-                    <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                <button onclick="toggleStartMenu()" class="w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-indigo-200 hover:text-white transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
+                    <i data-lucide="layout-grid" class="w-4 h-4"></i>
                 </button>
-                <div class="w-px h-5 bg-white/15"></div>
-                <button onclick="openWindow('win-bio')" id="task-win-bio" class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-indigo-300 hover:text-indigo-100 transition-all focus:outline-none">
-                    <i data-lucide="user" class="w-5 h-5"></i>
+                <div class="w-px h-4 bg-white/15"></div>
+                <button onclick="openWindow('win-bio')" id="task-win-bio" class="relative w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-indigo-300 hover:text-indigo-100 transition-all focus:outline-none">
+                    <i data-lucide="user" class="w-4 h-4"></i>
                 </button>
-                <button onclick="openWindow('win-projects')" id="task-win-projects" class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-amber-300 hover:text-amber-100 transition-all focus:outline-none">
-                    <i data-lucide="folder-git-2" class="w-5 h-5"></i>
+                <button onclick="openWindow('win-projects')" id="task-win-projects" class="relative w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-amber-300 hover:text-amber-100 transition-all focus:outline-none">
+                    <i data-lucide="folder-git-2" class="w-4 h-4"></i>
                 </button>
-                <button onclick="openWindow('win-summary')" id="task-win-summary" class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-rose-300 hover:text-rose-100 transition-all focus:outline-none">
-                    <i data-lucide="award" class="w-5 h-5"></i>
+                <button onclick="openWindow('win-summary')" id="task-win-summary" class="relative w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-rose-300 hover:text-rose-100 transition-all focus:outline-none">
+                    <i data-lucide="award" class="w-4 h-4"></i>
                 </button>
-                <button onclick="openWindow('win-gallery')" id="task-win-gallery" class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-sky-300 hover:text-sky-100 transition-all focus:outline-none">
-                    <i data-lucide="image" class="w-5 h-5 font-sans"></i>
+                <button onclick="openWindow('win-gallery')" id="task-win-gallery" class="relative w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-sky-300 hover:text-sky-100 transition-all focus:outline-none">
+                    <i data-lucide="image" class="w-4 h-4"></i>
                 </button>
-                <button onclick="openWindow('win-recycle-bin')" id="task-win-recycle-bin" class="relative w-9 h-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-emerald-300 hover:text-emerald-100 transition-all focus:outline-none">
-                    <i data-lucide="trash-2" class="w-5 h-5"></i>
+                <button onclick="openWindow('win-recycle-bin')" id="task-win-recycle-bin" class="relative w-[28px] h-[28px] flex items-center justify-center rounded-lg hover:bg-white/10 text-emerald-300 hover:text-emerald-100 transition-all focus:outline-none">
+                    <i data-lucide="trash-2" class="w-4 h-4"></i>
                 </button>
             </div>
 
             <div class="flex-grow flex justify-end items-center gap-3 text-white">
-                <i data-lucide="wifi" class="w-4 h-4 text-emerald-300"></i>
-                <i data-lucide="volume-2" class="w-4 h-4 text-indigo-300 font-sans"></i>
-                <div class="text-right flex flex-col justify-center">
-                    <span id="taskbar-time" class="text-xs font-semibold leading-none font-sans font-sans">00:00</span>
-                    <span id="taskbar-date" class="text-[9px] text-indigo-200/60 mt-1 leading-none font-sans">16/07/2026</span>
+                <i data-lucide="wifi" class="w-3.5 h-3.5 text-emerald-300"></i>
+                <i data-lucide="volume-2" class="w-3.5 h-3.5 text-indigo-300 font-sans"></i>
+                <div class="text-right flex flex-col justify-center font-sans">
+                    <span id="taskbar-time" class="text-[10px] font-semibold leading-none font-sans">00:00</span>
+                    <span id="taskbar-date" class="text-[8px] text-indigo-200/60 mt-0.5 leading-none font-sans font-sans">16/07/2026</span>
                 </div>
             </div>
         </footer>
@@ -1234,13 +1236,13 @@
                     const data = await res.json();
                     const temp = Math.round(data.current_weather.temperature);
                     if (weatherEl) {
-                        weatherEl.innerText = `${temp}°C • Hà Nội`;
+                        weatherEl.innerText = `${temp}°C • HN`;
                     }
                 } else {
-                    if (weatherEl) weatherEl.innerText = `30°C • Hà Nội`;
+                    if (weatherEl) weatherEl.innerText = `30°C • HN`;
                 }
             } catch (err) {
-                if (weatherEl) weatherEl.innerText = `30°C • Hà Nội`;
+                if (weatherEl) weatherEl.innerText = `30°C • HN`;
             }
         }
         fetchLiveWeather();
@@ -1440,17 +1442,17 @@
                 contentEl.innerHTML = `
                     <p class="font-bold border-b border-slate-300 pb-1 mb-2 text-indigo-700">=== GHI CHÚ QUAN TRỌNG ===</p>
                     <p>Chào mừng đến với hệ thống Digital Portfolio của Phạm Ngọc Ngân Châm!</p>
-                    <p class="mt-2 font-sans font-sans">Đây là tài liệu ghi chú cá nhân phục hồi trực tiếp từ Thùng rác máy tính.</p>
+                    <p class="mt-2 font-sans">Đây là tài liệu ghi chú cá nhân phục hồi trực tiếp từ Thùng rác máy tính.</p>
                     <p class="mt-2">- <strong>Chuyên ngành:</strong> Ngôn ngữ & Văn hóa Trung Quốc</p>
                     <p>- <strong>Lớp đào tạo:</strong> 25C3 • ĐH Ngoại ngữ (ULIS-VNU)</p>
                     <p>- <strong>Mã số sinh viên:</strong> 25041554</p>
-                    <p class="mt-4 text-emerald-700 font-sans">✓ Hoàn thành xuất sắc nhiệm vụ quản trị tệp tin!</p>
+                    <p class="mt-4 text-emerald-700">✓ Hoàn thành xuất sắc nhiệm vụ quản trị tệp tin!</p>
                 `;
             } else if (fileName === 'DiChuyen.txt') {
                 contentEl.innerHTML = `
                     <p class="font-bold border-b border-slate-300 pb-1 mb-2 text-indigo-700">=== TỆP TIN DI CHUYỂN ===</p>
                     <p>Tệp tin này đã được di chuyển thành công từ thư mục chính sang thư mục con TaiLieu.</p>
-                    <p class="mt-2 font-sans">Hệ thống ghi nhận toàn bộ tiến trình điều phối, tổ chức dữ liệu chính xác theo chỉ dẫn kỹ thuật.</p>
+                    <p class="mt-2">Hệ thống ghi nhận toàn bộ tiến trình điều phối, tổ chức dữ liệu chính xác theo chỉ dẫn kỹ thuật.</p>
                 `;
             } else {
                 contentEl.innerText = "Tệp tin trống.";
