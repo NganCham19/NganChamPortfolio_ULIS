@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -320,7 +322,7 @@
         <!-- ==================== NEW ENLARGED GLASSMORPHISM VERTICAL SIDEBAR ==================== -->
         <section class="desktop-shortcut-container absolute top-28 left-6 w-[136px] py-6 glass-sidebar rounded-[32px] flex flex-col items-center gap-3.5 z-30 select-none">
             
-            <!-- Icon 1: Về Bản Thân (Pastel Pink to Purple Glow Gradient) -->
+            <!-- Icon 1: Về Bản Thân -->
             <button onclick="openWindow('win-bio')" class="desktop-icon flex flex-col items-center justify-center p-2 rounded-2xl w-full text-white text-center focus:outline-none hover:bg-white/5 transition-all duration-300">
                 <div class="w-[54px] h-[54px] bg-gradient-to-br from-pink-400/20 to-purple-400/20 border border-pink-300/35 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-md mb-2 transition-all duration-300 hover:shadow-[0_0_15px_rgba(244,114,182,0.45)] hover:border-pink-300/60">
                     <i data-lucide="user" class="w-6 h-6 text-white"></i>
@@ -328,7 +330,7 @@
                 <span class="text-[11px] font-light tracking-wide drop-shadow-md">Về Bản Thân</span>
             </button>
 
-            <!-- Icon 2: Hồ Sơ Bài Tập (Pastel Orange to Peach Yellow Glow Gradient) -->
+            <!-- Icon 2: Hồ Sơ Bài Tập -->
             <button onclick="openWindow('win-projects')" class="desktop-icon flex flex-col items-center justify-center p-2 rounded-2xl w-full text-white text-center focus:outline-none hover:bg-white/5 transition-all duration-300">
                 <div class="w-[54px] h-[54px] bg-gradient-to-br from-orange-400/15 to-amber-300/20 border border-orange-300/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-md mb-2 transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,146,60,0.4)] hover:border-orange-300/50">
                     <i data-lucide="folder-git-2" class="w-6 h-6 text-white"></i>
@@ -336,7 +338,7 @@
                 <span class="text-[11px] font-light tracking-wide drop-shadow-md">Hồ Sơ Bài Tập</span>
             </button>
 
-            <!-- Icon 3: Tổng Kết (Pastel Deep Rose to Baby Pink Glow Gradient) -->
+            <!-- Icon 3: Tổng Kết -->
             <button onclick="openWindow('win-summary')" class="desktop-icon flex flex-col items-center justify-center p-2 rounded-2xl w-full text-white text-center focus:outline-none hover:bg-white/5 transition-all duration-300">
                 <div class="w-[54px] h-[54px] bg-gradient-to-br from-rose-500/20 to-rose-300/20 border border-rose-400/35 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-md mb-2 transition-all duration-300 hover:shadow-[0_0_15px_rgba(244,63,94,0.45)] hover:border-rose-400/60">
                     <i data-lucide="award" class="w-6 h-6 text-white"></i>
@@ -344,7 +346,7 @@
                 <span class="text-[11px] font-light tracking-wide drop-shadow-md">Tổng Kết</span>
             </button>
 
-            <!-- Icon 4: Thư Viện Ảnh (Pastel Sky Blue to Mint Green Glow Gradient) -->
+            <!-- Icon 4: Thư Viện Ảnh -->
             <button onclick="openWindow('win-gallery')" class="desktop-icon flex flex-col items-center justify-center p-2 rounded-2xl w-full text-white text-center focus:outline-none hover:bg-white/5 transition-all duration-300">
                 <div class="w-[54px] h-[54px] bg-gradient-to-br from-sky-400/20 to-emerald-300/20 border border-sky-300/35 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-md mb-2 transition-all duration-300 hover:shadow-[0_0_15px_rgba(56,189,248,0.45)] hover:border-sky-300/60">
                     <i data-lucide="image" class="w-6 h-6 text-white"></i>
@@ -352,7 +354,7 @@
                 <span class="text-[11px] font-light tracking-wide drop-shadow-md">Thư Viện Ảnh</span>
             </button>
 
-            <!-- Icon 5: Thùng Rác (Pastel Teal to Indigo Ash Glow Gradient) -->
+            <!-- Icon 5: Thùng Rác -->
             <button onclick="openWindow('win-recycle-bin')" class="desktop-icon flex flex-col items-center justify-center p-2 rounded-2xl w-full text-white text-center focus:outline-none hover:bg-white/5 transition-all duration-300">
                 <div class="w-[54px] h-[54px] bg-gradient-to-br from-teal-400/20 to-indigo-400/20 border border-teal-300/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-md mb-2 relative transition-all duration-300 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] hover:border-teal-300/50">
                     <i data-lucide="trash-2" class="w-6 h-6 text-white"></i>
@@ -362,21 +364,25 @@
             </button>
         </section>
 
-        <!-- ==================== DESKTOP MOBILE-STYLE PHOTO WIDGET ==================== -->
+        <!-- ==================== DESKTOP MOBILE-STYLE PHOTO WIDGET (With 14 Images, No "Kỷ niệm" Label) ==================== -->
         <div id="desktop-photo-widget" class="absolute top-28 right-12 w-[380px] h-[480px] glass-panel-dark p-2 rounded-[24px] z-30 hidden lg:block select-none shadow-[0_12px_40px_rgba(0,0,0,0.35)] border border-white/20">
             <div class="relative w-full h-full overflow-hidden rounded-[18px]">
-                <!-- Slideshow Images -->
+                <!-- Slideshow Images (1 to 14) -->
                 <div id="widget-slideshow" class="w-full h-full relative">
                     <img src="Hình 1.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-100" alt="Slide 1">
                     <img src="Hình 2.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 2">
                     <img src="Hình 3.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 3">
                     <img src="Hình 4.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 4">
                     <img src="Hình 5.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 5">
-                </div>
-                <!-- Mini Widget Label -->
-                <div class="absolute bottom-3 left-3 px-3 py-1 bg-black/45 backdrop-blur-md border border-white/10 rounded-full flex items-center gap-1.5 text-white/90 text-xs font-medium tracking-wide">
-                    <i data-lucide="heart" class="w-3.5 h-3.5 text-rose-400 fill-rose-400"></i>
-                    <span>Kỷ niệm</span>
+                    <img src="Hình 6.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 6">
+                    <img src="Hình 7.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 7">
+                    <img src="Hình 8.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 8">
+                    <img src="Hình 9.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 9">
+                    <img src="Hình 10.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 10">
+                    <img src="Hình 11.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 11">
+                    <img src="Hình 12.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 12">
+                    <img src="Hình 13.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 13">
+                    <img src="Hình 14.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-0" alt="Slide 14">
                 </div>
             </div>
         </div>
@@ -657,7 +663,7 @@
                                 <div class="space-y-3">
                                     <div>
                                         <p class="font-semibold text-amber-300">Tác vụ 1: Tóm tắt bài báo khoa học dài</p>
-                                        <p class="text-slate-400">Prompt cơ bản cho ra kết quả tóm tắt thô sơ, đôi khi quá dài dòng hoặc bỏ sót ý. Prompt cải tiến khống chế được độ dài 150 từ và chỉ rõ trọng tâm. Với prompt nâng cao, mình gán vai trò trợ lý học thuật kết hợp kỹ thuật Chain-of-thought giúp AI trích xuất sắc sảo 3 luận điểm chính, lập bảng phân tích logic và đề xuất 3 từ khóa học thuật cực kỳ hữu ích cho việc tra cứu thông tin.</p>
+                                        <p class="text-slate-400">Prompt cơ bản cho ra kết quả tóm tắt thô sơ, đôi khi quá dài dòng hoặc bỏ sót ý. Prompt cải tiến khống chế được độ dài 150 từ và chỉ rõ trọng tâm. Với prompt nâng cao, mình gán vai trò trợ lý học thuật kết hợp kỹ thuật Chain-of-thought giúp AI trích xuất sắc sảo 3 luận điểm chính, lập bảng phân tích logic và đề xuất 3 từ khóa học thuật tiếng Trung liên quan.</p>
                                     </div>
                                     <div>
                                         <p class="font-semibold text-amber-300">Tác vụ 2: Giải thích khái niệm kỹ thuật phức tạp (Blockchain)</p>
@@ -979,12 +985,12 @@
                 </div>
             </div>
 
-            <!-- APPLICATION 4: GALLERY WINDOW -->
+            <!-- APPLICATION 4: GALLERY WINDOW (Updated with 14 Images and removed descriptions) -->
             <div id="win-gallery" class="app-window w-[850px] h-[610px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10" style="left: 320px; top: 120px;">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
                     <div class="flex items-center gap-2">
                         <i data-lucide="image" class="w-4 h-4 text-sky-300"></i>
-                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase">Thư Viện Ảnh & Kỷ Niệm</span>
+                        <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase">Thư Viện Ảnh</span>
                     </div>
                     <div class="flex items-center gap-2 window-control-btn">
                         <button onclick="closeWindow('win-gallery')" class="w-3.5 h-3.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none flex items-center justify-center">
@@ -995,14 +1001,14 @@
                 
                 <div class="flex-grow overflow-y-auto p-6 font-sans">
                     <div class="border-b border-white/5 pb-4 mb-6">
-                        <span class="text-[10px] tracking-widest text-sky-400 uppercase font-semibold">Hình ảnh thực tế</span>
-                        <h3 class="text-xl font-bold serif-font text-slate-100">Khoảnh Khắc Kỷ Niệm & Học Tập</h3>
+                        <span class="text-[10px] tracking-widest text-sky-400 uppercase font-semibold">Hình ảnh lưu trữ</span>
+                        <h3 class="text-xl font-bold serif-font text-slate-100">Khoảnh Khắc Học Tập</h3>
                     </div>
 
-                    <!-- Lưới ảnh (Grid) hiển thị 5 ảnh cục bộ -->
+                    <!-- Lưới ảnh 14 ảnh (Từ Hình 1 đến Hình 14, không có nhãn chữ bên dưới) -->
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                         <!-- Ảnh 1 -->
-                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 1.jpg', 'Hình 1: Chân dung cá nhân - Phạm Ngọc Ngân Châm')">
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 1.jpg')">
                             <img src="Hình 1.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 1">
                             <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1 font-sans">
@@ -1012,7 +1018,7 @@
                         </div>
 
                         <!-- Ảnh 2 -->
-                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 2.jpg', 'Hình 2: Minh chứng thực hành bài tập và tự học nghiên cứu')">
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 2.jpg')">
                             <img src="Hình 2.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 2">
                             <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
@@ -1022,7 +1028,7 @@
                         </div>
 
                         <!-- Ảnh 3 -->
-                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 3.jpg', 'Hình 3: Hoạt động học tập, trao đổi ý kiến nhóm trực tuyến')">
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 3.jpg')">
                             <img src="Hình 3.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 3">
                             <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
@@ -1032,7 +1038,7 @@
                         </div>
 
                         <!-- Ảnh 4 -->
-                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 4.jpg', 'Hình 4: Kỷ niệm lớp học phần Ngôn ngữ & Văn hóa Trung Quốc 25C3')">
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 4.jpg')">
                             <img src="Hình 4.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 4">
                             <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
@@ -1042,8 +1048,98 @@
                         </div>
 
                         <!-- Ảnh 5 -->
-                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 5.jpg', 'Hình 5: Minh chứng sản phẩm sáng tạo nội dung số đồng hành cùng AI')">
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 5.jpg')">
                             <img src="Hình 5.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 5">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 6 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 6.jpg')">
+                            <img src="Hình 6.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 6">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 7 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 7.jpg')">
+                            <img src="Hình 7.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 7">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 8 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 8.jpg')">
+                            <img src="Hình 8.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 8">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 9 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 9.jpg')">
+                            <img src="Hình 9.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 9">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 10 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 10.jpg')">
+                            <img src="Hình 10.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 10">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 11 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 11.jpg')">
+                            <img src="Hình 11.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 11">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 12 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 12.jpg')">
+                            <img src="Hình 12.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 12">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 13 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 13.jpg')">
+                            <img src="Hình 13.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 13">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
+                                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 14 -->
+                        <div class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-black/20 cursor-pointer" onclick="openLightbox('Hình 14.jpg')">
+                            <img src="Hình 14.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Hình 14">
                             <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span class="text-xs text-white tracking-wider font-light flex items-center gap-1">
                                     <i data-lucide="zoom-in" class="w-4 h-4"></i> Phóng to
@@ -1121,13 +1217,12 @@
 
         </div>
 
-        <!-- LIGHTBOX DI ĐỘNG -->
+        <!-- LIGHTBOX DI ĐỘNG (Sạch văn bản mô tả) -->
         <div id="lightbox" class="fixed inset-0 bg-black/90 z-[99999] hidden flex-col items-center justify-center p-4" onclick="closeLightbox()">
             <button class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors" onclick="closeLightbox()">
                 <i data-lucide="x" class="w-8 h-8"></i>
             </button>
-            <img id="lightbox-img" src="" class="max-w-full max-h-[80vh] rounded-lg object-contain shadow-2xl transition-all duration-300" onclick="event.stopPropagation()">
-            <p id="lightbox-caption" class="text-white/80 text-sm mt-4 tracking-wide font-light"></p>
+            <img id="lightbox-img" src="" class="max-w-full max-h-[85vh] rounded-lg object-contain shadow-2xl transition-all duration-300" onclick="event.stopPropagation()">
         </div>
 
         <!-- ==================== WINDOWS SYSTEM START MENU ==================== -->
@@ -1631,15 +1726,13 @@
             }
         }
 
-        // 15. Lightbox Handlers
-        function openLightbox(src, caption) {
+        // 15. Lightbox Handlers (Removed caption updating)
+        function openLightbox(src) {
             const lightbox = document.getElementById('lightbox');
             const img = document.getElementById('lightbox-img');
-            const cap = document.getElementById('lightbox-caption');
             
-            if (lightbox && img && cap) {
+            if (lightbox && img) {
                 img.src = src;
-                cap.innerText = caption;
                 lightbox.classList.remove('hidden');
                 lightbox.classList.add('flex');
             }
@@ -1654,7 +1747,7 @@
             }
         }
 
-        // 17. Photo Slideshow Widget Logic (Slower transition - 1.5s fade, 4.5s cycle)
+        // 17. Photo Slideshow Widget Logic (Slow transition - 1.5s fade, 4.5s cycle)
         let currentWidgetSlide = 0;
         const widgetSlides = document.querySelectorAll('.slideshow-img');
         const widgetSlideCount = widgetSlides.length;
@@ -1681,8 +1774,6 @@
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
-        let mouseX = 0;
-        let mouseY = 0;
         let lastSpawnTime = 0;
 
         const particleColors = [
