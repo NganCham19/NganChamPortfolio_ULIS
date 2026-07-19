@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -275,7 +277,7 @@
             </div>
         </header>
 
-        <!-- Desktop Grid Shortcuts (Linh hoạt thích ứng trên điện thoại thành thanh ngang phía dưới header) -->
+        <!-- Desktop Grid Shortcuts -->
         <section class="desktop-shortcut-container absolute top-20 left-4 flex flex-col gap-4 z-30">
             <button onclick="openWindow('win-bio')" class="desktop-icon flex flex-col items-center justify-center p-3 rounded-xl w-24 h-24 text-white hover:text-amber-200 text-center focus:outline-none">
                 <div class="w-12 h-12 bg-indigo-500/35 border border-indigo-300/30 rounded-xl flex items-center justify-center shadow-lg mb-2">
@@ -310,7 +312,7 @@
         <!-- ==================== WINDOWS APP CONTAINERS ==================== -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none p-4 z-40">
             
-            <!-- APPLICATION 1: BIO WINDOW (Lệch phải trên máy tính, full màn hình trên điện thoại) -->
+            <!-- APPLICATION 1: BIO WINDOW -->
             <div id="win-bio" class="app-window w-[480px] h-[520px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
                     <div class="flex items-center gap-2">
@@ -349,7 +351,7 @@
                 </div>
             </div>
 
-            <!-- APPLICATION 2: PROJECTS DETAILED WINDOW (Kích thước rộng rãi cho báo cáo chi tiết) -->
+            <!-- APPLICATION 2: PROJECTS DETAILED WINDOW -->
             <div id="win-projects" class="app-window w-[850px] h-[610px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
                     <div class="flex items-center gap-2">
@@ -362,7 +364,7 @@
                 </div>
                 
                 <div class="flex-grow flex overflow-hidden projects-layout">
-                    <!-- Left index tabs (Tự động thích ứng trượt ngang khi dùng điện thoại) -->
+                    <!-- Left index tabs -->
                     <div class="w-1/3 bg-black/20 border-r border-white/5 flex flex-col p-4 overflow-y-auto gap-1 projects-sidebar">
                         <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest px-2 mb-2">Danh sách bài học</p>
                         <button onclick="switchTab('tab1')" id="btn-tab1" class="tab-button w-full text-left px-3 py-2.5 rounded-lg text-xs font-medium tracking-wide flex items-center gap-2 transition-colors hover:bg-white/5 bg-indigo-500/20 text-indigo-200">
@@ -394,7 +396,7 @@
                     <!-- Right Tab Content -->
                     <div class="flex-grow overflow-y-auto p-6 md:p-8 bg-black/10 projects-content">
                         
-                        <!-- TAB 1 (File Explorer đồ họa tương tác) -->
+                        <!-- TAB 1 -->
                         <div id="tab1" class="tab-content space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-sky-400 uppercase font-semibold">Bài tập 1 - Bài 1</span>
@@ -429,7 +431,7 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 1: TRÌNH GIẢ LẬP FILE EXPLORER -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 1 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="folder-open" class="w-4 h-4 text-sky-400"></i>
@@ -444,7 +446,7 @@
                                     <div class="col-span-2 pl-2 space-y-2">
                                         <p class="text-[10px] text-slate-500">Đường dẫn: /ThucHanh_PhamNgocNganCham</p>
                                         <div class="flex flex-wrap gap-2">
-                                            <div onclick="alert('Thư mục con chứa tệp tin: GhiChuQuanTrong.txt')" class="cursor-pointer p-2 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/20 rounded-lg flex items-center gap-1.5 text-[10px] text-indigo-200">
+                                            <div onclick="alert('Thư mục con chứa tệp tin: GhiChuQuanTrong.txt và DiChuyen.txt')" class="cursor-pointer p-2 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/20 rounded-lg flex items-center gap-1.5 text-[10px] text-indigo-200">
                                                 <i data-lucide="folder" class="w-4 h-4 text-amber-400"></i> TaiLieu/
                                             </div>
                                             <div onclick="openTextViewer('GhiChuQuanTrong.txt')" class="cursor-pointer p-2 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-400/20 rounded-lg flex items-center gap-1.5 text-[10px] text-emerald-200">
@@ -456,7 +458,7 @@
                             </div>
                         </div>
 
-                        <!-- TAB 2 (Biểu đồ Đánh giá đa chiều) -->
+                        <!-- TAB 2 -->
                         <div id="tab2" class="tab-content hidden space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-indigo-400 uppercase font-semibold">Bài tập 2 - Bài 2</span>
@@ -529,7 +531,7 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 2: CREDIBILITY METRIC INTERACTIVE CHANGER -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 2 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="sliders" class="w-4 h-4 text-indigo-400"></i>
@@ -538,10 +540,10 @@
                                 <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
                                     <!-- Source list selector -->
                                     <div class="md:col-span-2 flex flex-col gap-1 max-h-36 overflow-y-auto pr-1">
-                                        <button onclick="updateSourceMetrics(95, 92, 90, 95, 'Dörnyei (2001) - Multilingual Matters')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Dörnyei (2001)</button>
-                                        <button onclick="updateSourceMetrics(98, 95, 92, 100, 'Gao (2018) - Modern Chinese Teaching')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Gao (2018) - Vietnamese</button>
-                                        <button onclick="updateSourceMetrics(70, 65, 80, 75, 'Chinese.cn (2022) - Portal Online')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Chinese.cn (2022)</button>
-                                        <button onclick="updateSourceMetrics(90, 88, 95, 92, 'Brown (2014) - Pearson')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Brown (2014)</button>
+                                        <button onclick="updateSourceMetrics(95, 92, 90, 'Dörnyei (2001) - Multilingual Matters')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Dörnyei (2001)</button>
+                                        <button onclick="updateSourceMetrics(98, 95, 92, 'Gao (2018) - Modern Chinese Teaching')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Gao (2018) - Vietnamese</button>
+                                        <button onclick="updateSourceMetrics(70, 65, 80, 'Chinese.cn (2022) - Portal Online')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Chinese.cn (2022)</button>
+                                        <button onclick="updateSourceMetrics(90, 88, 95, 'Brown (2014) - Pearson')" class="w-full text-left p-1.5 rounded bg-indigo-500/10 text-[10px] text-slate-200 hover:bg-indigo-500/25">Brown (2014)</button>
                                     </div>
                                     <!-- Metrics visualizers -->
                                     <div class="md:col-span-3 bg-black/40 p-3 rounded border border-white/5 space-y-2 text-[10px]">
@@ -561,7 +563,7 @@
                             </div>
                         </div>
 
-                        <!-- TAB 3 (Compare Prompt) -->
+                        <!-- TAB 3 -->
                         <div id="tab3" class="tab-content hidden space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-amber-400 uppercase font-semibold">Bài tập 2 - Bài 3</span>
@@ -596,7 +598,7 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 3: PROMPT COMPARISON CONSOLE -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 3 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i>
@@ -620,7 +622,7 @@
                             </div>
                         </div>
 
-                        <!-- TAB 4 (Trello & GDrive toggler) -->
+                        <!-- TAB 4 -->
                         <div id="tab4" class="tab-content hidden space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-emerald-400 uppercase font-semibold">Bài tập 3 - Bài 4</span>
@@ -655,7 +657,7 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 4: WORKSPACE SIMULATOR -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 4 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
                                 <div class="flex justify-between items-center">
                                     <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
@@ -687,12 +689,12 @@
 
                                 <!-- GDrive Simulated layout -->
                                 <div id="collab-view-drive" class="hidden bg-black/40 p-3 rounded-lg min-h-[140px] text-[10px] font-mono space-y-1.5">
-                                    <p class="text-emerald-400">E:/GoogleDrive/Ứng_Dụng_AI_Ngoại_Ngữ/</p>
-                                    <p class="pl-4 text-slate-400">├── 1. Tài liệu tham khảo/</p>
-                                    <p class="pl-4 text-slate-400">├── 2. Nội dung báo cáo/</p>
-                                    <p class="pl-8 text-amber-300">└── BaoCao_AI_NgonNgu.docx</p>
-                                    <p class="pl-4 text-slate-400">├── 3. Hình ảnh minh họa/</p>
-                                    <p class="pl-4 text-slate-400">└── 4. Slide thuyết trình/</p>
+                                    <p class="text-emerald-400 font-sans">E:/GoogleDrive/Ứng_Dụng_AI_Ngoại_Ngữ/</p>
+                                    <p class="pl-4 text-slate-400 font-sans">├── 1. Tài liệu tham khảo/</p>
+                                    <p class="pl-4 text-slate-400 font-sans">├── 2. Nội dung báo cáo/</p>
+                                    <p class="pl-8 text-amber-300 font-sans">└── BaoCao_AI_NgonNgu.docx</p>
+                                    <p class="pl-4 text-slate-400 font-sans">├── 3. Hình ảnh minh họa/</p>
+                                    <p class="pl-4 text-slate-400 font-sans">└── 4. Slide thuyết trình/</p>
                                 </div>
                             </div>
                         </div>
@@ -701,7 +703,7 @@
                         <div id="tab5" class="tab-content hidden space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-purple-400 uppercase font-semibold">Bài tập 2 - Bài 5</span>
-                                <h3 class="text-xl font-bold serif-font">Sáng tạo nội dung số</h3>
+                                <h3 class="text-xl font-bold serif-font text-slate-100">Sáng tạo nội dung số</h3>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                                 <div class="p-4 bg-white/5 border border-white/5 rounded-xl">
@@ -765,7 +767,7 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 5: CREATIVE PIPELINE VISUALIZER -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 5 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="palette" class="w-4 h-4 text-purple-400"></i>
@@ -788,7 +790,7 @@
                             </div>
                         </div>
 
-                        <!-- TAB 6 (Accordion Infographic) -->
+                        <!-- TAB 6 -->
                         <div id="tab6" class="tab-content hidden space-y-6">
                             <div class="border-b border-white/5 pb-4">
                                 <span class="text-[10px] tracking-widest text-rose-400 uppercase font-semibold">Bài tập 4 - Bài 6</span>
@@ -817,11 +819,11 @@
                                 </div>
                             </div>
 
-                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 6: RESPONSIBLE AI INFOGRAPHIC ACCORDION -->
+                            <!-- ĐỒ HỌA MINH HỌA TƯƠNG TÁC 6 -->
                             <div class="p-4 bg-black/35 rounded-xl border border-white/10 space-y-3 text-xs">
                                 <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                                     <i data-lucide="shield-check" class="w-4 h-4 text-rose-400"></i>
-                                    Infographic Tuyên Truyền 5 Bước (Click xem chi tiết)
+                                    Infographic Tuyên Truyền 3 Bước (Click xem chi tiết)
                                 </p>
                                 <div class="space-y-1.5 text-[10px]">
                                     <div onclick="toggleAccordionStep(1)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors">
@@ -833,7 +835,7 @@
                                     </div>
 
                                     <div onclick="toggleAccordionStep(2)" class="cursor-pointer p-2 bg-white/5 hover:bg-white/10 rounded flex justify-between items-center transition-colors">
-                                        <span class="font-semibold text-rose-300">✗ Không nên: Copy-paste 100% tệp tin & tin tưởng mù quáng</span>
+                                        <span class="font-semibold text-rose-300 font-sans">✗ Không nên: Copy-paste 100% tệp tin & tin tưởng mù quáng</span>
                                         <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400" id="ac-arrow-2"></i>
                                     </div>
                                     <div id="ac-desc-2" class="hidden p-2.5 bg-black/30 text-slate-400 leading-relaxed rounded border-l-2 border-rose-500 font-light text-justify font-sans">
@@ -855,7 +857,7 @@
                 </div>
             </div>
 
-            <!-- APPLICATION 3: SUMMARY & REFLECTION WINDOW (Lệch phải vừa phải) -->
+            <!-- APPLICATION 3: SUMMARY & REFLECTION WINDOW -->
             <div id="win-summary" class="app-window w-[480px] h-[520px] glass-panel-dark rounded-2xl flex flex-col overflow-hidden text-white border border-white/10" style="left: 450px; top: 180px;">
                 <div class="window-header flex items-center justify-between px-5 py-3 bg-black/50 border-b border-white/10 select-none">
                     <div class="flex items-center gap-2">
@@ -863,7 +865,7 @@
                         <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase">Báo cáo tổng kết chặng đường</span>
                     </div>
                     <div class="flex items-center gap-2 window-control-btn">
-                        <button onclick="closeWindow('win-summary')" class="w-3 h-3 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none"></button>
+                        <button onclick="closeWindow('win-summary')" class="w-3.5 h-3.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none flex items-center justify-center"><i data-lucide="x" class="w-2.5 h-2.5 text-white"></i></button>
                     </div>
                 </div>
                 
@@ -875,8 +877,8 @@
 
                     <div class="space-y-4 text-xs font-light text-justify font-sans">
                         <div class="space-y-1.5 font-sans">
-                            <p class="font-bold text-amber-300 flex items-center gap-1.5">
-                                <i data-lucide="trending-up" class="w-4 h-4 text-amber-400"></i>
+                            <p class="font-bold text-amber-300 flex items-center gap-1.5 font-sans">
+                                <i data-lucide="trending-up" class="w-4 h-4 text-amber-400 font-sans"></i>
                                 Thuận Lợi Khách Quan
                             </p>
                             <p class="text-slate-400 leading-relaxed font-sans">
@@ -884,8 +886,8 @@
                             </p>
                         </div>
                         <div class="space-y-1.5 font-sans">
-                            <p class="font-bold text-rose-400 flex items-center gap-1.5">
-                                <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i>
+                            <p class="font-bold text-rose-400 flex items-center gap-1.5 font-sans">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400 font-sans"></i>
                                 Khó Khăn Đã Vượt Qua
                             </p>
                             <p class="text-slate-400 leading-relaxed font-sans">
@@ -893,8 +895,8 @@
                             </p>
                         </div>
                         <div class="space-y-1.5 font-sans">
-                            <p class="font-bold text-indigo-400 flex items-center gap-1.5">
-                                <i data-lucide="book-open" class="w-4 h-4 text-indigo-400"></i>
+                            <p class="font-bold text-indigo-400 flex items-center gap-1.5 font-sans">
+                                <i data-lucide="book-open" class="w-4 h-4 text-indigo-400 font-sans"></i>
                                 Bài học kinh nghiệm lâu dài
                             </p>
                             <p class="text-slate-400 leading-relaxed font-sans">
@@ -913,17 +915,17 @@
                         <span class="text-xs font-medium tracking-widest text-indigo-200 uppercase">Thùng Rác Hệ Thống</span>
                     </div>
                     <div class="flex items-center gap-2 window-control-btn">
-                        <button onclick="closeWindow('win-recycle-bin')" class="w-3 h-3 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none"></button>
+                        <button onclick="closeWindow('win-recycle-bin')" class="w-3.5 h-3.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors focus:outline-none flex items-center justify-center"><i data-lucide="x" class="w-2.5 h-2.5 text-white"></i></button>
                     </div>
                 </div>
                 
-                <div class="flex-grow p-6 flex flex-col justify-between">
+                <div class="flex-grow p-6 flex flex-col justify-between overflow-y-auto">
                     <div>
                         <p class="text-xs text-slate-400 font-light mb-4">Các tệp tin được phát hiện đã bị xóa trong quá trình thực hành Bài Tập 1 (Quản lý tệp tin). Bạn có thể khôi phục chúng lại về màn hình nền:</p>
                         
-                        <div class="space-y-2" id="recycle-list">
+                        <div class="space-y-2 font-sans" id="recycle-list">
                             <!-- Item 1 -->
-                            <div id="recycle-item-1" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl">
+                            <div id="recycle-item-1" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans">
                                 <div class="flex items-center gap-3">
                                     <i data-lucide="file-text" class="w-5 h-5 text-indigo-300"></i>
                                     <div>
@@ -934,9 +936,9 @@
                                 <button onclick="restoreRecycleItem('recycle-item-1', 'GhiChuQuanTrong.txt')" class="px-2.5 py-1 bg-indigo-500/20 hover:bg-indigo-500/35 border border-indigo-400/30 text-[10px] font-medium tracking-wide text-indigo-300 rounded transition-all">Khôi phục</button>
                             </div>
                             <!-- Item 2 -->
-                            <div id="recycle-item-2" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl">
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="file-text" class="w-5 h-5 text-indigo-300"></i>
+                            <div id="recycle-item-2" class="flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl font-sans">
+                                <div class="flex items-center gap-3 font-sans">
+                                    <i data-lucide="file-text" class="w-5 h-5 text-indigo-300 font-sans"></i>
                                     <div>
                                         <p class="text-xs font-semibold text-slate-200">DiChuyen.txt</p>
                                         <p class="text-[10px] text-slate-500 font-mono">Đường dẫn gốc: C:/ThucHanh_PhamNgocNganCham</p>
@@ -973,7 +975,7 @@
         </div>
 
         <!-- ==================== WINDOWS SYSTEM START MENU ==================== -->
-        <div id="start-menu" class="absolute bottom-16 left-1/2 -translate-x-1/2 w-80 max-w-sm glass-panel-dark rounded-2xl shadow-2xl p-5 flex flex-col text-white border border-white/15 opacity-0 pointer-events-none scale-95 transition-all duration-300 z-55">
+        <div id="start-menu" class="absolute bottom-16 left-1/2 -translate-x-1/2 w-80 max-w-sm glass-panel-dark rounded-2xl shadow-2xl p-5 flex flex-col text-white border border-white/15 opacity-0 pointer-events-none scale-95 transition-all duration-300 z-[999]">
             <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-4">
                 <div class="relative w-12 h-12 rounded-full p-0.5 bg-white/20 overflow-hidden">
                     <img src="Hình 1.jpg" alt="Phạm Ngọc Ngân Châm" class="w-full h-full object-cover rounded-full">
@@ -1017,7 +1019,7 @@
         <footer class="w-full max-w-3xl mx-auto h-12 glass-taskbar rounded-2xl flex items-center justify-between px-6 shadow-2xl z-50">
             <div class="flex items-center gap-2 text-white/75">
                 <i data-lucide="cloud-sun" class="w-5 h-5 text-amber-300"></i>
-                <span class="text-xs font-light hidden sm:inline-block font-sans">28°C • Hà Nội</span>
+                <span id="weather-info" class="text-xs font-light hidden sm:inline-block font-sans">Đang tải... • Hà Nội</span>
             </div>
 
             <div class="flex items-center gap-3">
@@ -1043,8 +1045,8 @@
                 <i data-lucide="wifi" class="w-4 h-4 text-emerald-300"></i>
                 <i data-lucide="volume-2" class="w-4 h-4 text-indigo-300"></i>
                 <div class="text-right flex flex-col justify-center">
-                    <span id="taskbar-time" class="text-xs font-semibold leading-none">00:00</span>
-                    <span id="taskbar-date" class="text-[9px] text-indigo-200/60 mt-0.5 leading-none">16/07/2026</span>
+                    <span id="taskbar-time" class="text-xs font-semibold leading-none font-sans">00:00</span>
+                    <span id="taskbar-date" class="text-[9px] text-indigo-200/60 mt-0.5 leading-none font-sans">16/07/2026</span>
                 </div>
             </div>
         </footer>
@@ -1081,11 +1083,47 @@
         setInterval(updateSystemDateTime, 1000);
         updateSystemDateTime();
 
-        // 2. Lock Screen Handling (Unlocks the desktop only, does not auto-open windows)
-        document.getElementById('login-form').addEventListener('submit', function(event) {
-            event.preventDefault();
+        // 2. Fetch Live Weather using Open-Meteo API
+        async function fetchLiveWeather() {
+            const weatherEl = document.getElementById('weather-info');
+            try {
+                // Tọa độ Hà Nội: Vĩ độ 21.0285, Kinh độ 105.8542
+                const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=21.0285&longitude=105.8542&current_weather=true');
+                if (res.ok) {
+                    const data = await res.json();
+                    const temp = Math.round(data.current_weather.temperature);
+                    if (weatherEl) {
+                        weatherEl.innerText = `${temp}°C • Hà Nội`;
+                    }
+                } else {
+                    if (weatherEl) weatherEl.innerText = `28°C • Hà Nội`;
+                }
+            } catch (err) {
+                // Trả về nhiệt độ mặc định nếu lỗi mạng hoặc CORS chặn
+                if (weatherEl) weatherEl.innerText = `28°C • Hà Nội`;
+            }
+        }
+        fetchLiveWeather();
+
+        // 3. Lock Screen Handling
+        function unlock() {
             document.getElementById('lock-screen').classList.add('unlocked');
             document.getElementById('password-input').value = '';
+        }
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            unlock();
+        });
+
+        // Hỗ trợ gõ phím bất kỳ ngoài ô nhập liệu để bỏ qua màn hình khóa
+        window.addEventListener('keydown', function(event) {
+            const lockScreen = document.getElementById('lock-screen');
+            if (lockScreen && !lockScreen.classList.contains('unlocked')) {
+                if (document.activeElement !== document.getElementById('password-input')) {
+                    unlock();
+                }
+            }
         });
 
         function lockScreen() {
@@ -1098,7 +1136,7 @@
             closeWindow('win-text-viewer');
         }
 
-        // 3. Start Menu Handling
+        // 4. Start Menu Handling
         function toggleStartMenu(forceClose = false) {
             const menu = document.getElementById('start-menu');
             if (forceClose || menu.classList.contains('opacity-100')) {
@@ -1110,17 +1148,323 @@
             }
         }
 
-        // 4. Windows Control Engine
+        // 5. Windows Control Engine
         let highestZIndex = 50;
 
-        // Custom start locations offset on desktop to prevent left shortcut covering on load
         const defaultPositions = {
             'win-bio': { left: '220px', top: '100px' },
-            'win-projects': { left: '710px', top: '140px' },
+            'win-projects': { left: '310px', top: '70px' },
             'win-summary': { left: '460px', top: '220px' },
             'win-recycle-bin': { left: '280px', top: '280px' },
             'win-text-viewer': { left: '360px', top: '260px' }
         };
 
         function openWindow(winId) {
-            const win
+            const win = document.getElementById(winId);
+            if (!win) return;
+            
+            if (!win.style.left && !win.style.top) {
+                const pos = defaultPositions[winId];
+                if (pos) {
+                    win.style.left = pos.left;
+                    win.style.top = pos.top;
+                }
+            }
+            
+            highestZIndex++;
+            win.style.zIndex = highestZIndex;
+            win.classList.add('active');
+            
+            const taskBtn = document.getElementById('task-' + winId);
+            if (taskBtn) {
+                taskBtn.classList.add('active-dot');
+            }
+        }
+
+        function closeWindow(winId) {
+            const win = document.getElementById(winId);
+            if (!win) return;
+            win.classList.remove('active');
+            
+            const taskBtn = document.getElementById('task-' + winId);
+            if (taskBtn) {
+                taskBtn.classList.remove('active-dot');
+            }
+        }
+
+        // Make Windows Draggable
+        function makeDraggable(el) {
+            const header = el.querySelector('.window-header');
+            if (!header) return;
+            
+            let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            
+            header.onmousedown = dragMouseDown;
+            header.ontouchstart = dragTouchStart;
+            
+            function dragMouseDown(e) {
+                e = e || window.event;
+                if (e.target.closest('button')) return;
+                
+                e.preventDefault();
+                highestZIndex++;
+                el.style.zIndex = highestZIndex;
+                
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+            
+            function dragTouchStart(e) {
+                if (e.target.closest('button')) return;
+                highestZIndex++;
+                el.style.zIndex = highestZIndex;
+                
+                pos3 = e.touches[0].clientX;
+                pos4 = e.touches[0].clientY;
+                document.ontouchend = closeDragElement;
+                document.ontouchmove = elementTouchDrag;
+            }
+            
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                el.style.top = (el.offsetTop - pos2) + "px";
+                el.style.left = (el.offsetLeft - pos1) + "px";
+            }
+            
+            function elementTouchDrag(e) {
+                pos1 = pos3 - e.touches[0].clientX;
+                pos2 = pos4 - e.touches[0].clientY;
+                pos3 = e.touches[0].clientX;
+                pos4 = e.touches[0].clientY;
+                el.style.top = (el.offsetTop - pos2) + "px";
+                el.style.left = (el.offsetLeft - pos1) + "px";
+            }
+            
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+                document.ontouchend = null;
+                document.ontouchmove = null;
+            }
+        }
+        
+        document.querySelectorAll('.app-window').forEach(makeDraggable);
+
+        // Bring clicked window to front
+        document.querySelectorAll('.app-window').forEach(win => {
+            win.addEventListener('mousedown', () => {
+                highestZIndex++;
+                win.style.zIndex = highestZIndex;
+            });
+            win.addEventListener('touchstart', () => {
+                highestZIndex++;
+                win.style.zIndex = highestZIndex;
+            });
+        });
+
+        // 6. Project Window Tabs Switcher
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) activeContent.classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('bg-indigo-500/20', 'text-indigo-200');
+                btn.classList.add('text-slate-400');
+            });
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-400');
+                activeBtn.classList.add('bg-indigo-500/20', 'text-indigo-200');
+            }
+        }
+
+        // 7. Dynamic Text File Viewer (Exercise 1)
+        function openTextViewer(fileName) {
+            const viewer = document.getElementById('win-text-viewer');
+            const titleEl = document.getElementById('text-viewer-title');
+            const contentEl = document.getElementById('text-viewer-content');
+            
+            titleEl.innerText = `Tập tin: ${fileName}`;
+            if (fileName === 'GhiChuQuanTrong.txt') {
+                contentEl.innerHTML = `
+                    <p class="font-bold border-b border-slate-300 pb-1 mb-2 text-indigo-700">=== GHI CHÚ QUAN TRỌNG ===</p>
+                    <p>Chào mừng đến với hệ thống Digital Portfolio của Phạm Ngọc Ngân Châm!</p>
+                    <p class="mt-2">Đây là tài liệu ghi chú cá nhân phục hồi trực tiếp từ Thùng rác máy tính.</p>
+                    <p class="mt-2">- <strong>Chuyên ngành:</strong> Ngôn ngữ & Văn hóa Trung Quốc</p>
+                    <p>- <strong>Lớp đào tạo:</strong> 25C3 • ĐH Ngoại ngữ (ULIS-VNU)</p>
+                    <p>- <strong>Mã số sinh viên:</strong> 25041554</p>
+                    <p class="mt-4 text-emerald-700">✓ Hoàn thành xuất sắc nhiệm vụ quản trị tệp tin!</p>
+                `;
+            } else if (fileName === 'DiChuyen.txt') {
+                contentEl.innerHTML = `
+                    <p class="font-bold border-b border-slate-300 pb-1 mb-2 text-indigo-700">=== TỆP TIN DI CHUYỂN ===</p>
+                    <p>Tệp tin này đã được di chuyển thành công từ thư mục chính sang thư mục con TaiLieu.</p>
+                    <p class="mt-2">Hệ thống ghi nhận toàn bộ tiến trình điều phối, tổ chức dữ liệu chính xác theo chỉ dẫn kỹ thuật.</p>
+                `;
+            } else {
+                contentEl.innerText = "Tệp tin trống.";
+            }
+            
+            openWindow('win-text-viewer');
+        }
+
+        // 8. Research Resource Metrical Analyzer (Exercise 2)
+        function updateSourceMetrics(m1, m2, m3, title) {
+            document.getElementById('source-analyzing-title').innerText = title;
+            
+            document.getElementById('metric-m1').innerText = `${m1}%`;
+            document.getElementById('metric-bar-m1').style.width = `${m1}%`;
+            
+            document.getElementById('metric-m2').innerText = `${m2}%`;
+            document.getElementById('metric-bar-m2').style.width = `${m2}%`;
+            
+            document.getElementById('metric-m3').innerText = `${m3}%`;
+            document.getElementById('metric-bar-m3').style.width = `${m3}%`;
+        }
+
+        // 9. Prompt Engineering Compare Engine (Exercise 3)
+        const promptTasks = {
+            1: {
+                basic: `"Tóm tắt bài viết sau: [Chèn văn bản]"` ,
+                advanced: `"Bạn là một trợ lý học thuật chuyên hỗ trợ sinh viên đại học. Hãy đọc tài liệu dưới đây và thực hiện các bước sau:\\n1. Tóm tắt không quá 150 từ.\\n2. Trích xuất 3 luận điểm chính dưới dạng gạch đầu dòng.\\n3. Đề xuất 3 từ khóa học thuật tiếng Trung liên quan.\\n\\nHãy suy nghĩ từng bước và lập luận logic trước khi đưa ra câu trả lời."`
+            },
+            2: {
+                basic: `"Blockchain là gì? Hãy giải thích ngắn gọn."`,
+                advanced: `"Bạn là một giảng viên đại học. Hãy giải thích khái niệm Blockchain cho một sinh viên năm nhất ngành ngoại ngữ không có nền tảng công nghệ.\\n\\nYêu cầu:\\n- Sử dụng phương pháp ẩn dụ Feynman (ví dụ: việc ghi chép sổ nợ của cả làng ở đình làng) để giải thích.\\n- Trình bày thành 5 phần rõ ràng: định nghĩa, cách hoạt động, ví dụ thực tế, ưu/nhược điểm, đối sánh dữ liệu.\\n- Cấm sử dụng các biệt ngữ kỹ thuật như 'node', 'phi tập trung', 'sổ cái' mà không có sự giải nghĩa dễ hiểu."`
+            },
+            3: {
+                basic: `"Hãy tạo cho tôi một bài kiểm tra HSK4."`,
+                advanced: `"Bạn là giáo viên chuyên luyện thi HSK4 tiếng Trung. Hãy thiết kế một mini test gồm:\\n- 4 câu từ vựng\\n- 3 câu ngữ pháp\\n- 3 câu đọc hiểu\\n\\nYêu cầu: Ràng buộc phải đưa ra đáp án chính xác kèm theo phần giải thích chi tiết, đồng thời chỉ ra các lỗi sai phổ biến mà sinh viên Việt Nam hay mắc phải khi học các mẫu ngữ pháp này để người học tự học dễ hiểu bản chất."`
+            }
+        };
+
+        function togglePromptTask(taskNum) {
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById('pt-btn-' + i);
+                if (i === taskNum) {
+                    btn.classList.remove('bg-white/5', 'text-slate-400');
+                    btn.classList.add('bg-amber-500/20', 'text-amber-200');
+                } else {
+                    btn.classList.add('bg-white/5', 'text-slate-400');
+                    btn.classList.remove('bg-amber-500/20', 'text-amber-200');
+                }
+            }
+            document.getElementById('prompt-basic-text').innerText = promptTasks[taskNum].basic;
+            document.getElementById('prompt-advanced-text').innerText = promptTasks[taskNum].advanced;
+        }
+
+        // 10. Collaboration Platform Toggler (Exercise 4)
+        function toggleCollaborationView(viewType) {
+            const btnTrello = document.getElementById('collab-btn-trello');
+            const btnDrive = document.getElementById('collab-btn-drive');
+            const trelloView = document.getElementById('collab-view-trello');
+            const driveView = document.getElementById('collab-view-drive');
+            
+            if (viewType === 'trello') {
+                btnTrello.className = "px-2 py-0.5 bg-indigo-500/20 text-[10px] rounded text-indigo-200";
+                btnDrive.className = "px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400";
+                trelloView.classList.remove('hidden');
+                driveView.classList.add('hidden');
+            } else {
+                btnDrive.className = "px-2 py-0.5 bg-emerald-500/20 text-[10px] rounded text-emerald-200";
+                btnTrello.className = "px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400";
+                driveView.classList.remove('hidden');
+                trelloView.classList.add('hidden');
+            }
+        }
+
+        // 11. Co-creative AI Visual Generation Simulator (Exercise 5)
+        let generationInterval = null;
+        function triggerAICampaignGeneration() {
+            const consoleLog = document.getElementById('generation-console-log');
+            const artwork = document.getElementById('campaign-rendered-art');
+            const placeholder = document.getElementById('campaign-art-placeholder');
+            
+            artwork.style.opacity = '0';
+            placeholder.innerText = "Đang khởi tạo...";
+            consoleLog.innerHTML = "Đang kết nối tới mô hình Google Gemini và DALL-E 3...";
+            
+            let steps = [
+                "Đang phân tích bối cảnh giáo dục tương lai...",
+                "Đang trích xuất dàn ý 5 phần (mở đầu, cá nhân hóa, vai trò người thầy, thách thức)...",
+                "Đang tinh chỉnh ngôn ngữ dịch từ thuật toán sang văn phong sư phạm...",
+                "Đang gửi mô tả thiết kế sang DALL-E 3 để dựng hình ảnh lớp học hologram...",
+                "Hình ảnh 3D hologram đã tạo thành công. Đang gửi dữ liệu sang Canva AI...",
+                "Hoàn thành tinh chỉnh bố cục, font chữ Montserrat và tiêu đề!",
+                "✓ Quy trình đồng sáng tạo hoàn tất!"
+            ];
+            
+            let index = 0;
+            if (generationInterval) clearInterval(generationInterval);
+            
+            generationInterval = setInterval(() => {
+                if (index < steps.length) {
+                    consoleLog.innerHTML += `<br>→ ${steps[index]}`;
+                    consoleLog.scrollTop = consoleLog.scrollHeight;
+                    index++;
+                } else {
+                    clearInterval(generationInterval);
+                    placeholder.innerText = "";
+                    artwork.style.opacity = '1';
+                }
+            }, 800);
+        }
+
+        // 12. Accordion Infographic Steps (Exercise 6)
+        function toggleAccordionStep(stepNum) {
+            for (let i = 1; i <= 3; i++) {
+                const desc = document.getElementById('ac-desc-' + i);
+                const arrow = document.getElementById('ac-arrow-' + i);
+                if (i === stepNum) {
+                    const isHidden = desc.classList.contains('hidden');
+                    if (isHidden) {
+                        desc.classList.remove('hidden');
+                        if (arrow) arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        desc.classList.add('hidden');
+                        if (arrow) arrow.style.transform = 'rotate(0deg)';
+                    }
+                } else {
+                    if (desc) desc.classList.add('hidden');
+                    if (arrow) arrow.style.transform = 'rotate(0deg)';
+                }
+            }
+        }
+
+        // 13. Recycle Bin Restoration Logic
+        let restoredCount = 0;
+        function restoreRecycleItem(itemId, fileName) {
+            const item = document.getElementById(itemId);
+            if (item) {
+                item.style.opacity = '0';
+                setTimeout(() => {
+                    item.remove();
+                    restoredCount++;
+                    
+                    alert(`Tệp tin "${fileName}" đã được khôi phục thành công về thư mục gốc! Bạn có thể kiểm tra trực tiếp trong ứng dụng Bài 1.`);
+                    
+                    const remaining = document.querySelectorAll('#recycle-list > div').length;
+                    if (remaining === 0) {
+                        document.getElementById('recycle-empty-msg').classList.remove('hidden');
+                        document.getElementById('recycle-dot').classList.add('hidden');
+                    }
+                }, 300);
+            }
+        }
+
+        // Setup Initial Tab State on Load
+        switchTab('tab1');
+        togglePromptTask(1);
+    </script>
+</body>
+</html>
