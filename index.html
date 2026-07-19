@@ -1,5 +1,3 @@
-dưới đây:
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -326,7 +324,6 @@ dưới đây:
                 
                 <div class="flex-grow overflow-y-auto p-6 space-y-6">
                     <div class="flex flex-col items-center text-center pb-4 border-b border-white/5">
-                        <!-- Tăng kích thước vòng tròn ảnh từ w-32 h-32 lên w-48 h-48 và thêm dải màu viền rực rỡ, hiệu ứng đổ bóng phát sáng, tương tác di chuột mượt mà -->
                         <div class="relative w-48 h-48 rounded-full p-[3px] bg-gradient-to-tr from-amber-400 via-rose-400 to-indigo-500 shadow-[0_0_25px_rgba(245,175,91,0.55)] border border-white/30 overflow-hidden mb-4 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(245,175,91,0.7)]">
                             <img src="Hình 1.jpg" alt="Phạm Ngọc Ngân Châm" class="w-full h-full object-cover rounded-full">
                         </div>
@@ -606,11 +603,11 @@ dưới đây:
                                     Prompt Compare-o-Vision Console (Bấm xem sự khác biệt)
                                 </p>
                                 <div class="flex gap-2 border-b border-white/5 pb-2">
-                                    <button onclick="togglePromptTask(1)" id="pt-btn-1" class="px-3 py-1 bg-white/10 text-[10px] rounded text-indigo-200">Tác vụ 1: Tóm tắt</button>
+                                    <button onclick="togglePromptTask(1)" id="pt-btn-1" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400">Tác vụ 1: Tóm tắt</button>
                                     <button onclick="togglePromptTask(2)" id="pt-btn-2" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400">Tác vụ 2: Ẩn dụ Blockchain</button>
                                     <button onclick="togglePromptTask(3)" id="pt-btn-3" class="px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400">Tác vụ 3: Mini Test HSK4</button>
                                 </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2 text-[10px] font-mono leading-relaxed text-justify">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2 text-[10px] font-mono leading-relaxed text-justify font-sans">
                                     <div class="p-3 bg-red-950/20 border border-red-500/20 rounded-lg">
                                         <p class="font-bold text-red-300">Cơ Bản (Zero-shot)</p>
                                         <p class="text-slate-400 mt-1" id="prompt-basic-text">"Tóm tắt bài viết sau: [Chèn văn bản]"</p>
@@ -642,18 +639,18 @@ dưới đây:
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Nhật ký phối hợp công cụ trong dự án nhóm của mình:</p>
-                                <div class="space-y-3 text-[11px] leading-relaxed">
+                                <div class="space-y-3 text-[11px] leading-relaxed font-sans">
                                     <div>
                                         <p class="font-semibold text-emerald-300">1. Quản lý khối lượng công việc cá nhân qua Trello</p>
-                                        <p class="text-slate-400">Trên không gian chung của nhóm, mình chịu trách nhiệm quản lý tiến độ cá nhân thông qua việc tạo lập các thẻ nhiệm vụ chi tiết: Tìm kiếm tài liệu giáo dục ngoại ngữ; Nghiên cứu các công cụ phổ biến; Tổng hợp lợi ích AI đối với người học; Phân tích thách thức đạo đức; Viết nội dung báo cáo nhóm và kiểm tra chỉnh sửa bản thảo. Việc di chuyển thẻ công việc liên tục giúp cả nhóm bám sát tiến độ, không sợ bị quên hay trễ deadline.</p>
+                                        <p class="text-slate-400 font-sans">Trên không gian chung của nhóm, mình chịu trách nhiệm quản lý tiến độ cá nhân thông qua việc tạo lập các thẻ nhiệm vụ chi tiết: Tìm kiếm tài liệu giáo dục ngoại ngữ; Nghiên cứu các công cụ phổ biến; Tổng hợp lợi ích AI đối với người học; Phân tích thách thức đạo đức; Viết nội dung báo cáo nhóm và kiểm tra chỉnh sửa bản thảo. Việc di chuyển thẻ công việc liên tục giúp cả nhóm bám sát tiến độ, không sợ bị quên hay trễ deadline.</p>
                                     </div>
                                     <div>
                                         <p class="font-semibold text-emerald-300">2. Google Docs trong soạn thảo và biên tập đồng thời khoa học</p>
-                                        <p class="text-slate-400">Để tránh việc xung đột dữ liệu khi nhiều người sửa bài, nhóm sử dụng Google Docs để viết bài trực tuyến thời gian thực. Mình trực tiếp phụ trách soạn thảo Phần 1 (Khái niệm & nguyên lý hoạt động AI ngoại ngữ), Phần 2 (Lợi ích cá nhân hóa lộ trình, luyện phát âm, dịch thuật) và Phần 3 (Thách thức nguy cơ phụ thuộc, giảm tự duy độc lập). Góp ý chéo thông qua tính năng Comment và rà soát kỹ lưỡng Lịch sử phiên bản.</p>
+                                        <p class="text-slate-400 font-sans">Để tránh việc xung đột dữ liệu khi nhiều người sửa bài, nhóm sử dụng Google Docs để viết bài trực tuyến thời gian thực. Mình trực tiếp phụ trách soạn thảo Phần 1 (Khái niệm & nguyên lý hoạt động AI ngoại ngữ), Phần 2 (Lợi ích cá nhân hóa lộ trình, luyện phát âm, dịch thuật) và Phần 3 (Thách thức nguy cơ phụ thuộc, giảm tự duy độc lập). Góp ý chéo thông qua tính năng Comment và rà soát kỹ lưỡng Lịch sử phiên bản.</p>
                                     </div>
                                     <div>
                                         <p class="font-semibold text-emerald-300">3. Google Drive trong quản trị và bảo mật tài nguyên nhóm</p>
-                                        <p class="text-slate-400">Mình đã đứng ra trực tiếp quy hoạch cấu trúc thư mục số trên Google Drive gồm: Tài liệu tham khảo, Nội dung báo cáo, Hình ảnh minh họa, Slide thuyết trình, Nguồn nghiên cứu bổ sung với quy tắc đặt tên tệp thống nhất như BaoCao_AI_NgonNgu.docx để việc tra cứu của cả nhóm diễn ra nhanh chóng.</p>
+                                        <p class="text-slate-400 font-sans">Mình đã đứng ra trực tiếp quy hoạch cấu trúc thư mục số trên Google Drive gồm: Tài liệu tham khảo, Nội dung báo cáo, Hình ảnh minh họa, Slide thuyết trình, Nguồn nghiên cứu bổ sung với quy tắc đặt tên tệp thống nhất như BaoCao_AI_NgonNgu.docx để việc tra cứu của cả nhóm diễn ra nhanh chóng.</p>
                                     </div>
                                 </div>
                             </div>
@@ -719,18 +716,18 @@ dưới đây:
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Hành trình đồng sáng tạo bài viết "AI đã tái định hình lớp học tương lai như thế nào?" của mình:</p>
-                                <div class="space-y-3 text-[11px] leading-relaxed">
+                                <div class="space-y-3 text-[11px] leading-relaxed font-sans">
                                     <div>
-                                        <p class="font-semibold text-purple-300">Giai đoạn 1: Khởi tạo ý tưởng và viết nội dung thô bằng Google Gemini</p>
-                                        <p class="text-slate-400">Mình viết prompt đóng vai một chuyên gia giáo dục và biên soạn nội dung, lên dàn ý 5 phần (mở đầu, cá nhân hóa lộ trình học, vai trò của người thầy, thách thức và kết luận). Sau đó, viết chi tiết cho phần Cá nhân hóa học tập nhờ AI. Đóng góp sáng tạo của mình thể hiện qua việc chỉnh sửa câu chữ dịch thô sượng (như sửa "thuật toán thích ứng" thành "hệ thống tự điều chỉnh") và lồng ghép thêm ví dụ thực tế học viên Việt Nam dùng Elsa Speak sửa phát âm tiếng Anh hàng ngày.</p>
+                                        <p class="font-semibold text-purple-300 font-sans">Giai đoạn 1: Khởi tạo ý tưởng và viết nội dung thô bằng Google Gemini</p>
+                                        <p class="text-slate-400 font-sans">Mình viết prompt đóng vai một chuyên gia giáo dục và biên soạn nội dung, lên dàn ý 5 phần (mở đầu, cá nhân hóa lộ trình học, vai trò của người thầy, thách thức và kết luận). Sau đó, viết chi tiết cho phần Cá nhân hóa học tập nhờ AI. Đóng góp sáng tạo của mình thể hiện qua việc chỉnh sửa câu chữ dịch thô sượng (như sửa "thuật toán thích ứng" thành "hệ thống tự điều chỉnh") và lồng ghép thêm ví dụ thực tế học viên Việt Nam dùng Elsa Speak sửa phát âm tiếng Anh hàng ngày.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-purple-300">Giai đoạn 2: Sáng tạo hình ảnh minh họa độc quyền bằng Bing Image Creator / DALL-E 3</p>
-                                        <p class="text-slate-400">Mình đã tỉ mỉ viết prompt mô tả một lớp học tương lai đầy tính viễn tưởng nơi một nhóm học sinh đang tương tác với trợ lý ảo và quả địa cầu ảo ảnh 3D (hologram) dưới ánh sáng ấm áp, đậm tính nghệ thuật. Việc này giúp tạo ra ảnh minh họa sắc nét độc quyền, thay vì dùng ảnh mạng trùng lặp.</p>
+                                        <p class="font-semibold text-purple-300 font-sans">Giai đoạn 2: Sáng tạo hình ảnh minh họa độc quyền bằng Bing Image Creator / DALL-E 3</p>
+                                        <p class="text-slate-400 font-sans">Mình đã tỉ mỉ viết prompt mô tả một lớp học tương lai đầy tính viễn tưởng nơi một nhóm học sinh đang tương tác với trợ lý ảo và quả địa cầu ảo ảnh 3D (hologram) dưới ánh sáng ấm áp, đậm tính nghệ thuật. Việc này giúp tạo ra ảnh minh họa sắc nét độc quyền, thay vì dùng ảnh mạng trùng lặp.</p>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-purple-300">Giai đoạn 3: Thiết kế ảnh bìa truyền thông (Canva AI - Magic Design)</p>
-                                        <p class="text-slate-400">Truy cập Canva -> Magic Design -> Prompt thiết kế ảnh bìa phong cách công nghệ hiện đại tông xanh tím. Đóng góp sáng tạo cá nhân thể hiện qua việc chọn mẫu chữ bên trái, khoảng trống bên phải để chèn ảnh DALL-E 3 vào, đổi font Montserrat hiện đại và định hình lại tiêu đề chính: "AI ĐÃ TÁI ĐỊNH HÌNH LỚP HỌC TƯƠNG LAI NHƯ THẾ NÀO?".</p>
+                                        <p class="font-semibold text-purple-300 font-sans">Giai đoạn 3: Thiết kế ảnh bìa truyền thông (Canva AI - Magic Design)</p>
+                                        <p class="text-slate-400 font-sans">Truy cập Canva -> Magic Design -> Prompt thiết kế ảnh bìa phong cách công nghệ hiện đại tông xanh tím. Đóng góp sáng tạo cá nhân thể hiện qua việc chọn mẫu chữ bên trái, khoảng trống bên phải để chèn ảnh DALL-E 3 vào, đổi font Montserrat hiện đại và định hình lại tiêu đề chính: "AI ĐÃ TÁI ĐỊNH HÌNH LỚP HỌC TƯƠNG LAI NHƯ THẾ NÀO?".</p>
                                     </div>
                                 </div>
                             </div>
@@ -747,7 +744,7 @@ dưới đây:
                                                 <th class="px-3 py-2">Hạn chế gặp phải</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="divide-y divide-white/5 font-light">
+                                        <tbody class="divide-y divide-white/5 font-light font-sans">
                                             <tr>
                                                 <td class="px-3 py-2.5 font-medium text-slate-200">Google Gemini</td>
                                                 <td class="px-3 py-2">Tốc độ xử lý cực nhanh dưới 5 giây, hiểu ngữ cảnh bài viết sâu sắc và lập luận mạch lạc.</td>
@@ -810,7 +807,7 @@ dưới đây:
 
                             <div class="p-4 bg-black/25 rounded-xl border border-white/5 space-y-3 text-xs font-light text-justify font-sans">
                                 <p class="font-bold text-slate-200">Chi tiết bộ 6 nguyên tắc vàng của Phạm Ngọc Ngân Châm:</p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[10px] leading-relaxed">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[10px] leading-relaxed font-sans">
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 1: Ý tưởng gốc (Original Intent First):</strong> Ý tưởng chính, cấu trúc xương sống phải do bộ não mình tự tư duy trước khi nhờ AI hỗ trợ.</div>
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 2: Nghi ngờ mặc định & Kiểm chứng bắt buộc:</strong> Luôn xem thông tin AI là tham khảo, đối chiếu chéo sách vở và báo cáo chính thống.</div>
                                     <div class="p-2 bg-black/20 rounded border border-white/5"><strong>Nguyên tắc 3: Minh bạch tuyệt đối:</strong> Thành thật khai báo mức độ tham gia của AI và chuẩn hóa trích dẫn theo định dạng APA.</div>
@@ -983,7 +980,7 @@ dưới đây:
                 </div>
                 <div>
                     <h4 class="text-sm font-semibold tracking-wide text-slate-100">Phạm Ngọc Ngân Châm</h4>
-                    <span class="text-[10px] text-slate-400 font-mono tracking-wider">Lớp: 25K2 • 25041554</span>
+                    <span class="text-[10px] text-slate-400 font-mono tracking-wider">Lớp: 25C3 • 25041554</span>
                 </div>
             </div>
             
@@ -1084,18 +1081,11 @@ dưới đây:
         setInterval(updateSystemDateTime, 1000);
         updateSystemDateTime();
 
-        // 2. Lock Screen Handling (Unlocks and auto-opens main windows layout safely offset)
+        // 2. Lock Screen Handling (Unlocks the desktop only, does not auto-open windows)
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('lock-screen').classList.add('unlocked');
             document.getElementById('password-input').value = '';
-            
-            // Layout cascadingly safely shifted to the right to leave space for left icons
-            setTimeout(() => {
-                openWindow('win-bio');
-                openWindow('win-projects');
-                openWindow('win-summary');
-            }, 600);
         });
 
         function lockScreen() {
@@ -1133,304 +1123,4 @@ dưới đây:
         };
 
         function openWindow(winId) {
-            const winNode = document.getElementById(winId);
-            if (!winNode) return;
-
-            // Apply default positions on desktop screens
-            if (!winNode.style.left && window.innerWidth >= 1024) {
-                winNode.style.left = defaultPositions[winId].left;
-                winNode.style.top = defaultPositions[winId].top;
-            }
-
-            winNode.classList.add('active');
-            bringWindowToFront(winId);
-
-            const taskBtn = document.getElementById(`task-${winId}`);
-            if (taskBtn) {
-                taskBtn.classList.add('active-dot');
-            }
-            toggleStartMenu(true);
-        }
-
-        function closeWindow(winId) {
-            const winNode = document.getElementById(winId);
-            if (!winNode) return;
-
-            winNode.classList.remove('active');
-            const taskBtn = document.getElementById(`task-${winId}`);
-            if (taskBtn) {
-                taskBtn.classList.remove('active-dot');
-            }
-        }
-
-        function bringWindowToFront(winId) {
-            const winNode = document.getElementById(winId);
-            if (!winNode) return;
-            highestZIndex++;
-            winNode.style.zIndex = highestZIndex;
-        }
-
-        // 5. Draggable & Resizable Handlers with Sọc Chéo Handle
-        function makeResizableAndDraggable(el) {
-            const header = el.querySelector('.window-header');
-            let isDragging = false;
-            let isResizing = false;
-            let startX, startY, startWidth, startHeight, startLeft, startTop;
-
-            header.addEventListener('mousedown', (e) => {
-                if (window.innerWidth < 1024) return; // Disable dragging on touch viewports
-                if (e.target.closest('button')) return; 
-                isDragging = true;
-                startX = e.clientX;
-                startY = e.clientY;
-                startLeft = el.offsetLeft;
-                startTop = el.offsetTop;
-                bringWindowToFront(el.id);
-                document.addEventListener('mousemove', onMouseMove);
-                document.addEventListener('mouseup', onMouseUp);
-            });
-
-            function onMouseMove(e) {
-                if (isDragging) {
-                    const dx = e.clientX - startX;
-                    const dy = e.clientY - startY;
-                    el.style.left = `${startLeft + dx}px`;
-                    el.style.top = `${startTop + dy}px`;
-                }
-            }
-
-            function onMouseUp() {
-                isDragging = false;
-                document.removeEventListener('mousemove', onMouseMove);
-                document.removeEventListener('mouseup', onMouseUp);
-            }
-
-            // Custom Resizer Corner
-            const resizeHandle = document.createElement('div');
-            resizeHandle.className = 'absolute bottom-0 right-0 w-6 h-6 cursor-se-resize z-50 flex items-end justify-end p-0.5';
-            resizeHandle.style.background = 'linear-gradient(135deg, transparent 55%, rgba(245, 175, 91, 0.45) 55%)';
-            el.appendChild(resizeHandle);
-
-            resizeHandle.addEventListener('mousedown', (e) => {
-                if (window.innerWidth < 1024) return; // Disable resizing on touch viewports
-                e.preventDefault();
-                isResizing = true;
-                startX = e.clientX;
-                startY = e.clientY;
-                startWidth = el.offsetWidth;
-                startHeight = el.offsetHeight;
-                bringWindowToFront(el.id);
-                document.addEventListener('mousemove', onResizeMove);
-                document.addEventListener('mouseup', onResizeUp);
-            });
-
-            function onResizeMove(e) {
-                if (isResizing) {
-                    const dw = e.clientX - startX;
-                    const dh = e.clientY - startY;
-                    el.style.width = `${Math.max(420, startWidth + dw)}px`;
-                    el.style.height = `${Math.max(300, startHeight + dh)}px`;
-                }
-            }
-
-            function onResizeUp() {
-                isResizing = false;
-                document.removeEventListener('mousemove', onResizeMove);
-                document.removeEventListener('mouseup', onResizeUp);
-            }
-        }
-
-        document.querySelectorAll('.app-window').forEach(win => {
-            makeResizableAndDraggable(win);
-            win.addEventListener('mousedown', () => bringWindowToFront(win.id));
-        });
-
-        // 6. Project Tabs Switcher
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('hidden');
-            });
-            document.getElementById(tabId).classList.remove('hidden');
-
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('bg-indigo-500/20', 'text-indigo-200');
-                btn.classList.add('text-slate-400');
-            });
-
-            const activeBtn = document.getElementById(`btn-${tabId}`);
-            if (activeBtn) {
-                activeBtn.classList.remove('text-slate-400');
-                activeBtn.classList.add('bg-indigo-500/20', 'text-indigo-200');
-            }
-        }
-
-        // 7. Interactive Graphics & Widgets Handlers
-        // Bài 2 Radar Evaluation Changer
-        function updateSourceMetrics(auth, rec, acc, cover, title) {
-            document.getElementById('source-analyzing-title').innerText = title;
-            
-            document.getElementById('metric-m1').innerText = `${auth}%`;
-            document.getElementById('metric-bar-m1').style.width = `${auth}%`;
-
-            document.getElementById('metric-m2').innerText = `${rec}%`;
-            document.getElementById('metric-bar-m2').style.width = `${rec}%`;
-
-            document.getElementById('metric-m3').innerText = `${acc}%`;
-            document.getElementById('metric-bar-m3').style.width = `${cover}%`;
-        }
-
-        // Bài 3 Compare Console Task swapper
-        function togglePromptTask(taskNo) {
-            const ptBtn1 = document.getElementById('pt-btn-1');
-            const ptBtn2 = document.getElementById('pt-btn-2');
-            const ptBtn3 = document.getElementById('pt-btn-3');
-            
-            ptBtn1.className = "px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400";
-            ptBtn2.className = "px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400";
-            ptBtn3.className = "px-3 py-1 bg-white/5 text-[10px] rounded text-slate-400";
-
-            document.getElementById(`pt-btn-${taskNo}`).className = "px-3 py-1 bg-white/10 text-[10px] rounded text-indigo-200";
-
-            const basicText = document.getElementById('prompt-basic-text');
-            const advText = document.getElementById('prompt-advanced-text');
-
-            if (taskNo === 1) {
-                basicText.innerText = '"Tóm tắt bài viết sau: [Chèn văn bản]"';
-                advText.innerText = '"Bạn là một trợ lý học thuật chuyên hỗ trợ sinh viên đại học. Hãy đọc tài liệu dưới đây và thực hiện các bước sau..."';
-            } else if (taskNo === 2) {
-                basicText.innerText = '"Giải thích Blockchain là gì?"';
-                advText.innerText = '"Bạn là một giảng viên công nghệ thông tin. Hãy giải thích Blockchain theo trình tự sau: 1. Định nghĩa đơn giản, 2. Cách hoạt động..."';
-            } else if (taskNo === 3) {
-                basicText.innerText = '"Tạo câu hỏi ôn tập về HSK4."';
-                advText.innerText = '"Bạn là giáo viên luyện thi HSK4 có kinh nghiệm. Hãy tạo một mini test HSK4 gồm: Phần từ vựng, Phần ngữ pháp, Phần đọc hiểu..."';
-            }
-        }
-
-        // Bài 4 Trello/Drive widget swapper
-        function toggleCollaborationView(target) {
-            const btnTrello = document.getElementById('collab-btn-trello');
-            const btnDrive = document.getElementById('collab-btn-drive');
-            const viewTrello = document.getElementById('collab-view-trello');
-            const viewDrive = document.getElementById('collab-view-drive');
-
-            if (target === 'trello') {
-                btnTrello.className = "px-2 py-0.5 bg-indigo-500/20 text-[10px] rounded text-indigo-200";
-                btnDrive.className = "px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400";
-                viewTrello.classList.remove('hidden');
-                viewDrive.classList.add('hidden');
-            } else {
-                btnTrello.className = "px-2 py-0.5 bg-white/5 text-[10px] rounded text-slate-400";
-                btnDrive.className = "px-2 py-0.5 bg-indigo-500/20 text-[10px] rounded text-indigo-200";
-                viewTrello.classList.add('hidden');
-                viewDrive.classList.remove('hidden');
-            }
-        }
-
-        // Bài 5 Campaign simulation trigger
-        function triggerAICampaignGeneration() {
-            const consoleLog = document.getElementById('generation-console-log');
-            const placeholder = document.getElementById('campaign-art-placeholder');
-            const imageCanvas = document.getElementById('campaign-rendered-art');
-
-            consoleLog.innerText = "Đang gán vai Gemini...";
-            imageCanvas.classList.remove('opacity-100');
-            imageCanvas.classList.add('opacity-0');
-            placeholder.innerText = "Đang dựng ảnh nghệ thuật...";
-
-            setTimeout(() => {
-                consoleLog.innerHTML += "<br>Bài viết tri thức sẵn sàng: 'AI và tương lai giáo dục...'";
-            }, 600);
-
-            setTimeout(() => {
-                consoleLog.innerHTML += "<br>Đang kích hoạt DALL-E 3 Prompting...";
-            }, 1200);
-
-            setTimeout(() => {
-                consoleLog.innerHTML += "<br>Chiến dịch hoàn thành! Trưng bày thiết kế Canva.";
-                placeholder.innerText = "";
-                imageCanvas.classList.remove('opacity-0');
-                imageCanvas.classList.add('opacity-100');
-            }, 1800);
-        }
-
-        // Bài 6 Accordion Infographic steps toggler
-        function toggleAccordionStep(stepNo) {
-            const desc1 = document.getElementById('ac-desc-1');
-            const desc2 = document.getElementById('ac-desc-2');
-            const desc3 = document.getElementById('ac-desc-3');
-            
-            desc1.classList.add('hidden');
-            desc2.classList.add('hidden');
-            desc3.classList.add('hidden');
-
-            document.getElementById(`ac-desc-${stepNo}`).classList.remove('hidden');
-        }
-
-        // 8. Interactive Recycle Bin Operations
-        function restoreRecycleItem(itemId, fileName) {
-            const itemNode = document.getElementById(itemId);
-            if (itemNode) {
-                itemNode.classList.add('hidden');
-            }
-
-            setTimeout(() => {
-                const remaining = Array.from(document.querySelectorAll('#recycle-list > div')).filter(node => !node.classList.contains('hidden')).length;
-                if (remaining === 0) {
-                    document.getElementById('recycle-empty-msg').classList.remove('hidden');
-                    document.getElementById('recycle-dot').classList.add('hidden');
-                }
-            }, 300);
-
-            createDesktopFileIcon(fileName);
-        }
-
-        function createDesktopFileIcon(fileName) {
-            const workspace = document.querySelector('section');
-            if (!workspace) return;
-
-            const elementId = `restored-file-${Date.now()}`;
-            const btn = document.createElement('button');
-            btn.id = elementId;
-            btn.onclick = function() {
-                openTextViewer(fileName);
-            };
-            btn.className = "desktop-icon flex flex-col items-center justify-center p-3 rounded-xl w-24 h-24 text-white hover:text-amber-200 text-center focus:outline-none animate-bounce";
-            btn.innerHTML = `
-                <div class="w-12 h-12 bg-indigo-400/25 border border-indigo-200/30 rounded-xl flex items-center justify-center shadow-lg mb-2">
-                    <i data-lucide="file-text" class="w-6 h-6 text-indigo-200"></i>
-                </div>
-                <span class="text-xs font-medium tracking-wide drop-shadow-md truncate w-full px-1">${fileName}</span>
-            `;
-
-            workspace.appendChild(btn);
-            lucide.createIcons();
-        }
-
-        function openTextViewer(fileName) {
-            const winNode = document.getElementById('win-text-viewer');
-            const titleNode = document.getElementById('text-viewer-title');
-            const contentNode = document.getElementById('text-viewer-content');
-
-            titleNode.innerText = fileName;
-
-            if (fileName === 'GhiChuQuanTrong.txt') {
-                contentNode.innerHTML = `
-                    <p class="text-indigo-600 font-bold border-b border-indigo-100 pb-1 mb-2">// KHÔI PHỤC THÀNH CÔNG</p>
-                    <p class="mb-1"><strong>Dự án:</strong> Phạm Ngọc Ngân Châm - Bài Tập 1</p>
-                    <p class="mb-1"><strong>Đường dẫn:</strong> C:/ThucHanh_PhamNgocNganCham/TaiLieu</p>
-                    <p class="text-slate-600 leading-relaxed mt-2">Nội dung ghi chú quan trọng đã khôi phục. Đây là minh chứng thao tác lưu trữ tệp tin có tính quy chuẩn cao trên môi trường Windows.</p>
-                `;
-            } else {
-                contentNode.innerHTML = `
-                    <p class="text-indigo-600 font-bold border-b border-indigo-100 pb-1 mb-2">// TÀI LIỆU DỊCH CHUYỂN</p>
-                    <p class="mb-1"><strong>Dự án:</strong> DiChuyen.txt</p>
-                    <p class="text-slate-600 leading-relaxed mt-2">Tệp này đã được di chuyển thành công từ cấu trúc gốc của Bài Tập 1 bằng phương thức Cut & Paste.</p>
-                `;
-            }
-
-            openWindow('win-text-viewer');
-        }
-    </script>
-
-</body>
-</html>
+            const win
