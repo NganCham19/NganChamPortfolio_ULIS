@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -364,9 +362,9 @@
             </button>
         </section>
 
-        <!-- ==================== DESKTOP MOBILE-STYLE PHOTO WIDGET (Lavender Glow Border, Scaled Up to 500x680px) ==================== -->
-        <div id="desktop-photo-widget" class="absolute top-28 right-12 w-[500px] h-[680px] glass-panel-dark p-2.5 rounded-[28px] z-30 hidden lg:block select-none border-2 border-[#E6E6FA]/55 shadow-[0_0_30px_rgba(230,230,250,0.45),0_15px_50px_rgba(0,0,0,0.45)] transition-all duration-500 hover:shadow-[0_0_45px_rgba(230,230,250,0.65),0_15px_50px_rgba(0,0,0,0.45)] hover:border-[#E6E6FA]/80">
-            <div class="relative w-full h-full overflow-hidden rounded-[22px]">
+        <!-- ==================== DESKTOP MOBILE-STYLE PHOTO WIDGET (With Purple Glowing Border & 14 Images) ==================== -->
+        <div id="desktop-photo-widget" class="absolute top-28 right-12 w-[380px] h-[480px] glass-panel-dark p-2 rounded-[24px] z-30 hidden lg:block select-none border border-purple-300/50 shadow-[0_0_25px_rgba(167,139,250,0.3),0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-500 hover:shadow-[0_0_35px_rgba(167,139,250,0.45),0_12px_40px_rgba(0,0,0,0.35)] hover:border-purple-300/70">
+            <div class="relative w-full h-full overflow-hidden rounded-[18px]">
                 <!-- Slideshow Images (1 to 14) -->
                 <div id="widget-slideshow" class="w-full h-full relative">
                     <img src="Hình 1.jpg" class="slideshow-img absolute inset-0 w-full h-full object-cover transition-opacity opacity-100" alt="Slide 1">
@@ -554,7 +552,7 @@
                             </div>
 
                             <div class="space-y-3">
-                                <p class="text-xs font-semibold text-slate-200">Mười tài liệu học thuật được mình chọn lọc và thẩm định rất kỹ lưỡng:</p>
+                                <p class="text-xs font-semibold text-slate-200">Mười tài liệu học thuật được mình chọn lọc và thẩm định rất kỹ lưu lượng:</p>
                                 <div class="space-y-2 max-h-48 overflow-y-auto pr-2 text-[11px] font-light text-slate-300">
                                     <div class="p-3 bg-black/25 border border-white/5 rounded-lg">
                                         <p class="font-semibold text-slate-200">1. Dörnyei, Z. (2001)</p>
@@ -1810,13 +1808,13 @@
                     this.vx = Math.cos(angle) * speed;
                     this.vy = Math.sin(angle) * speed;
 
-                    this.maxSize = Math.random() * 6 + 4.5; // Kích thước hạt nổ lớn hơn một chút
+                    this.maxSize = Math.random() * 14 + 4.5; // Kích thước hạt nổ lớn hơn một chút
                     this.maxDistance = Math.random() * 40 + 40; // Bay xa khoảng 40px -> 80px
                     this.waveSpeed = Math.random() * 0.02 + 0.01; // Quỹ đạo thẳng hơn chút
                 } else {
                     this.x = x;
                     this.y = y;
-                    this.maxSize = Math.random() * 5 + 3.5;
+                    this.maxSize = Math.random() * 14 + 3.5;
                     this.maxDistance = Math.random() * 20 + 30;
                     this.waveSpeed = Math.random() * 0.04 + 0.02;
 
@@ -1887,7 +1885,7 @@
                     ctx.closePath();
                     ctx.fill();
                 } else if (this.type === 'flower') {
-                    // Vẽ bông hoa 5 cánh nhỏ
+                    // Bông hoa 5 cánh nhỏ
                     const petals = 5;
                     const r = this.size * 0.45;
                     ctx.beginPath();
@@ -1979,3 +1977,4 @@
     </script>
 </body>
 </html>
+
